@@ -1,0 +1,98 @@
+
+
+.Column2{
+    left: 0;
+    margin-bottom: 130px;
+    grid-row: 2 / -1;
+    text-align: center;
+    padding-left: 20px;
+    position: relative;
+    flex-direction: column;
+
+    bottom: 0;
+
+}
+
+@media screen and (max-width: 768px) {
+    .Column2 {
+        padding-bottom: 280px;
+        max-width:233px;
+    }
+}
+
+.ImgWrap{
+    max-width: 333px;
+    height: 100%;
+    box-sizing: content-box;
+    width: 100%;
+    border: solid #00FFFF 4px;
+    background-color: #010606;
+    position: relative;
+    margin-bottom: -300px;
+    z-index: 33;
+
+}
+
+.Img{
+    width: 100%;
+    margin: 0 0 -2px -1px;
+
+    padding-bottom: 10px;
+    position:sticky;
+    margin-left: -25px;
+    margin-top: -30px;
+
+}
+
+.column3{
+    background-color: rgb(0, 0, 0);
+    box-sizing: content-box;
+    width: 600px;
+    height: 320px;
+    margin-left: 160px;
+    padding-left: 60px;
+    z-index: -11;
+    border: solid #00FFFF 1px;
+
+
+
+}
+@media screen and (min-width: 1800px) {
+    .column3 {
+        padding-left: 200px;
+        margin-left: 50px;
+        margin-bottom: 200px;
+        
+    }
+}
+@media screen and (max-width: 768px) {
+    .column3 {
+        width: 300px;
+        max-width: 222px;
+        padding-right: 10px;
+        margin-left: 120px;
+    }
+}
+
+
+.typewriter{
+    overflow: hidden;
+    padding-left: 120px;
+    font-size: 22px;
+    color: aliceblue;
+
+}
+
+@media screen and (max-width: 768px) {
+    .typewriter {
+        font-size: 18px;
+        padding-left: 50px;
+    }
+}
+
+.bildeMitt{
+    margin: 0;
+    left: 0;
+    height: 100%;
+}
+
