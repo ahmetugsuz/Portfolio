@@ -1,71 +1,59 @@
-import React, {useState, useEffect} from 'react';
-import {AboutContainer, AboutWrapper, Column1,
-TextWrapper, TopLine, Heading, Subtitle, AboutRow, Column2, ImgWrap, Img, 
-Column3, Column4, Experience, Img2Wrap, Img2, TopLineGoals, ImgLanguages, HeadingExperience}
-from './AboutElements';
+import React from 'react'
+import './AboutElements.css';
+import './Data';
+import { Image } from './AboutElements';
+import bilde from '../../images/mitt-bilde.png';
+import languages from '../../images/languages.png'; 
+import goals from '../../images/goals2.png'; 
 import TypeWriter from 'typewriter-effect';
-import "./AboutStyling.css";
-import {animateScroll as scroll} from 'react-scroll';
+import { AboutWrapper } from '../AboutSection2/AboutElements';
+import Soknad from './Søknad.pdf';
 
-function AboutSection({lightBg, id, topLine, lightText, darkText, headline, description,
-img, alt, img2, imgLanguages, headline2, headline3}) {
-
+function About({ headline, headline2, headline3, id }) {
   return (
-    <AboutContainer lightBg={lightBg} id={id} >
-      <AboutWrapper>
-        <AboutRow>
-            <Column1>
-            <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>
-                <TypeWriter 
-                options={{
-                  autoStart: true,
-                  loop: true,
-                }}
-                onInit={(typewriter) =>{
-                  typewriter.typeString(headline).pauseFor(10000).deleteAll().pauseFor(1000).typeString(headline2)
-                  .pauseFor(8000).deleteAll().pauseFor(1000).typeString(headline3).pauseFor(8000).deleteAll().pauseFor(1000)
-                  .start();
-                }}/>
-                </Heading>
-            </TextWrapper>
-            </Column1>
-            <div className='Column2'>
-              <div className='ImgWrap'>
-                <img src={img} className="Img" alt={"mitt-bilde"} />
-              </div>
-            <div className='column3'>
-              <div className='typewriter'>
-              <TypeWriter
-              options={{
-                loop: false,
-              }}
-              onInit={(typewriter2)  => { 
-                typewriter2.pauseFor(2500).typeString(description).pauseFor(2000).
-                typeString(" i'm Ahmet, 21 years old software engineer.").pauseFor(500).
-                typeString(" Currently living in Norway, with the oppurtinity of working remotly. I am currently working on my way to finish computer science degree in University of Oslo. My passion to programming.").pauseFor(500).
-                typeString("Within all these years with programming, I learned a lot of good and dumb things, but the best thing I've learned is the oppurtunity to be ambitious, and that there is still no limits of how far you can go, at the end of the day there is still code and your creativity in your mind.").
-                start();
-              }}/>
-              </div>
-            </div>
-            </div>
-            <Column4>
-              <Experience>
-                  <HeadingExperience>Languages and tools that I speak</HeadingExperience>
-                  <ImgLanguages src={imgLanguages} alt={"Languages"}/>
-              </Experience>
-            </Column4>
-            <Img2Wrap>
-              <TopLineGoals>Goals & achievements</TopLineGoals>
-              <Img2 src={img2} alt={"goals"}/>
-            </Img2Wrap>
-        </AboutRow>
-      </AboutWrapper>
-    </AboutContainer>
+    <div className='projectsContainer' id={id}>
+   
+      <div className="textBox">
+      <p className='topline'> AHMET TUGSUZ </p>
+      <h1 className='heading'>
+        <TypeWriter
+          options={{
+            autoStart: true,
+            loop: true,
+          }}
+          onInit={(typewriter) => {
+            typewriter.typeString('Full Stack Devoloper').pauseFor(10000).deleteAll().pauseFor(1000).typeString('Software Engineer')
+              .pauseFor(8000).deleteAll().pauseFor(1000).typeString('Software Architect').pauseFor(8000).deleteAll().pauseFor(1000)
+              .start();
+          }} />
+      </h1>
+      
+      <div className='descriptionContainer'>
+        <p className='hello'>"HELLO WORLD"</p>
+        <p className='description'>I am Ahmet, 21 years old Software Engineer located in Norway. 
+          Well-organised person, problem solver, independet employee with a high attention to detail and pattern.
+        </p>
+        <p className='description'>
+          As a <a className='linkUniversity' href="https://www.google.com/search?q=university+of+oslo&source=hp&ei=oVL1YuP2K-i_xc8PgoyMyA8&iflsig=AJiK0e8AAAAAYvVgsb-ivcgsB0THuWI79XYXqTDFNqmM&ved=0ahUKEwijy_Cgvb_5AhXoX_EDHQIGA_kQ4dUDCAY&uact=5&oq=university+of+oslo&gs_lcp=Cgdnd3Mtd2l6EAMyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyCwguEIAEEMcBEK8BMgUIABCABDIFCAAQgAQyBQgAEIAEOhEILhCABBCxAxCDARDHARDRAzoLCAAQgAQQsQMQgwE6CwguEIAEELEDENQCOggIABCABBCxAzoICC4QgAQQsQM6CwguEIAEELEDEIMBOggILhCABBDUAjoICAAQsQMQgwE6DgguEIAEELEDEMcBENEDOg4ILhCABBCxAxDHARCvAToRCC4QgAQQsQMQgwEQxwEQrwE6CAguELEDEIMBOgsILhCABBDHARDRA1AAWOMYYIEbaABwAHgAgAFMiAH-CJIBAjE4mAEAoAEB&sclient=gws-wiz">University of Oslo</a> graduate I am a huge passionated programmer.
+          With experience of real time projects with team, I'm now looking forward to 
+          get into new team-projects with positive people and ambitious projects.
+        </p>
+      </div>
+      <div className='buttonContainer'>
+          <img src={bilde} className="b"></img>
+          <a href={Soknad} target="_blank" rel="noopener noreferrer">
+            <button className='button'>Søknad</button>
+          </a>
+          <button className='button'>CV</button>
+      </div>
+      </div>
+      
+
+
+    </div>
+
+
   )
 }
 
-
-export default AboutSection;
+export default About

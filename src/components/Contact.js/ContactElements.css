@@ -1,0 +1,198 @@
+.contactContainer{
+    height: 90vh;
+    margin-top: 300px;
+    width: 100%;
+    background-color: #010606;
+    color: white;
+    
+}
+
+@media screen and (min-width: 1800px) {
+    .contactContainer{
+        height: 90vh;
+    }
+}
+
+.inputContainer{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    padding: 50px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-left: 550px;
+    z-index: 3;
+
+}
+
+.overtekst{
+    padding: 10px;
+    font-size: large;
+    padding-top: 30px;
+}
+
+.toplineV2{
+    color: aqua;
+    font-family: fantasy;
+    font-size: 1.2rem;
+    margin-left: 50px;
+}
+
+.textField{
+    font-size: large;
+    width: 600px;
+    height: 40px;
+    border-radius: 5px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+
+}
+
+.meldingSection{
+    border-radius: 10px;
+    font-size: large;
+    padding-right: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.typ2{
+    color: aqua;
+    width: 100%;
+    font-size: large;
+    margin-left: -5px;
+    padding-left: 15px;
+}
+
+.rettStrek{
+    border: solid whitesmoke 2px;
+    left: 0;
+
+
+}
+
+.straightLine{
+    border: solid white 1px;
+
+    width: 100;
+}
+
+.overLinjaTekst{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.V2{
+    padding-left: 50px;
+    font-size: 1.5rem;
+    font-family: monospace;
+    letter-spacing: 3.4px;
+}
+
+.innholdOverdel{
+    padding-bottom: 5px;
+}
+
+.footerContainer{
+    position: relative;
+
+}
+
+.footerAboutMe{
+    left: 0;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.footerThisWebsite{
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: -10px;
+}
+
+.footerSocial{
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    margin-right: 50px;
+    right: 0;
+    margin-top: -12px;
+}
+
+.V3{
+    padding-left: 10px;
+    font-size: x-large;
+}
+
+.createdBy{
+
+    margin-bottom: 5px;
+    padding: 15px;
+}
+
+.createdV2{
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
+    letter-spacing: 5px;
+    margin-left: -25px;
+
+    
+}
+
+.goodbye{
+    font-family: fantasy;
+    color: aqua;
+}
+
+.linkedin{
+    width: 25%;
+    position: absolute;
+    background-color: black;
+    margin-left: 30px;
+    margin-top: 1.2rem;
+
+}
+
+.github{
+    width: 25%;
+    position: absolute;
+    margin-left: -50px;
+    color: #010606;
+    margin-top: 1.2rem;
+}
+
+.email{
+    bottom: 0;
+}
+
+.bildeContainer{
+    position: absolute;
+    left: 0;
+    margin-left: -100px;
+
+    width: 50%;
+    height: 100%;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 40%, transparent 76%);
+}
+
+.bildeAvMeg{
+    width: 78%;
+    opacity: 0.9;
+}
+
+.bildeAvMeg:after{
+    background:linear-gradient(rgba(20, 117, 150, 0.266), rgba(0, 0, 0, 0.559));
+}
+
+@media screen and (min-width: 1800px) {
+    .bildeContainer{
+        height: 90%;
+    }
+}

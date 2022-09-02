@@ -4,9 +4,16 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Home from './pages';
 import Hero from './components/HeroSection';
-import AboutSection from './components/AboutSection';
-import { homeObjOne, homeObjTwo } from './components/AboutSection/Data';
-import Projects from './components/ProjectsSection';
+import AboutSection from './components/AboutSection2';
+import { homeObjOne, homeObjTwo } from './components/AboutSection2/Data';
+import { homeObjAbout, homeObjQuote } from './components/AboutSection/Data';
+import About from './components/AboutSection';
+import Quote from './components/QuoteSection';
+import Knowledge from './components/KnowledgeSection';
+import Project from './components/ProjectSection';
+import Contact from './components/Contact.js';
+import Social from './components/Social';
+
 const Image = () => {
   return (
     <>
@@ -27,8 +34,12 @@ function App() {
     <>
     <Router>
       <Home />
-      <AboutSection {...homeObjOne} />
-      <Projects {...homeObjOne}/>
+      <About {...homeObjAbout}/>
+      <Quote />
+      <Knowledge />
+      <Project />
+      <Contact />
+      <Social />
     </Router>
 
     

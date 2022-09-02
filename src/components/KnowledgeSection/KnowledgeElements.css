@@ -1,0 +1,189 @@
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.KnowledgeContainer{
+    height: 110vh;
+    background-color: #010606;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.upperContainer{
+    position: relative;
+    padding-top: 70px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.toplineLanguages{
+    color: aliceblue;
+    font-size: 2.0rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.languages{
+    padding-top: 70px;
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto auto auto;
+    z-index: 3;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    right: 0;
+    left: 0;
+
+
+}
+
+.languageBilde{
+    width: 220px;
+    padding: 10px;
+    opacity: 0.55;
+    transition: transform 0.7s ease;
+    
+}
+
+.languageBilde::after, .languageBilde::before{
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    left:0;
+    bottom: 0;
+   
+    z-index: -1;
+    transition: transform 0.5s ease-in-out;
+}
+
+.languageBilde:hover{
+    transform: translate(16px, -20px);
+    width: 270px;
+    opacity: 1;
+}
+
+.languageBilde:hover::after{
+    transform: translate(6px, 6px);
+
+}
+
+.languageBilde:hover::before{
+    transform: translate(12px, 12px);
+
+}
+
+
+
+.goalsContainer{
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-bottom: -5px;
+
+
+
+}
+
+.toplineGoals{
+    color: aliceblue;
+    padding: 20px;
+    font-size: 2.0rem;
+}
+
+.goals{
+    width: 95%;
+
+}
+
+.venstreInfo{
+    border: solid #4A1097 2px;
+    border-radius: 500px;
+    width: 100%;
+}
+
+.info2{
+    border: solid #180238 2px;
+    margin-top: 400px;
+}
+
+.venstreInfoTekst{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    position: absolute;
+    color: white;
+    margin-top: 50px;
+    width: 70%;
+    margin-left: -300px;
+    z-index: -33;
+
+}
+.venstreInfoTekst2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    position: absolute;
+    color: white;
+    right: 0;
+    width: 70%;
+    margin-right: -730px;
+    margin-top: -250px;
+
+    z-index: -33;
+
+}
+
+.venstreInfoContainer{
+    position: absolute;
+    padding-top: 50px;
+}
+
+.venstreBilde{
+    position: absolute;
+    margin-right: -750px;
+    margin-top: 0px;
+    right: 0;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.venstreBilde2{
+    position: absolute;
+    width: 70%;
+    left: 0;
+    margin-left: -300px;
+    margin-top: 300px;
+}
+
+.frontendContainer{
+
+}
+
+.middleInfoTekst{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    position: absolute;
+    color: aliceblue;
+    
+
+}
+
+.venstreInfoTekstRight{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    position: absolute;
+    color: white;
+    margin-top: 50px;
+    width: 70%;
+    margin-left: 50px;
+    z-index: -33;
+
+}

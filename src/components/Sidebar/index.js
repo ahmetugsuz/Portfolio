@@ -13,6 +13,9 @@ function Sidebar({isOpen, toggle}) {
                 <SidebarLink to="about" onClick={toggle}
                 smooth={true} duration={500} spy={true} exact='true'
                 offset={-80}>About Me</SidebarLink>
+                <SidebarLink to="skills" onClick={toggle}
+                smooth={true} duration={500} spy={true} exact='true'
+                offset={-80}>Skills</SidebarLink>
                 <SidebarLink to="projects" onClick={toggle}
                 smooth={true} duration={500} spy={true} exact='true'
                 offset={-80}>My Projects</SidebarLink>

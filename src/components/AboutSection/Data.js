@@ -1,6 +1,7 @@
-import TypeWriter from 'typewriter-effect';
 
-export const homeObjOne = {
+
+
+export const homeObjAbout = {
     id: 'about',
     lightBg: false,
     lightText: true,
@@ -18,20 +19,4 @@ export const homeObjOne = {
     dark: true,
     primary: true,
     darkText: false
-};
-
-export const homeObjTwo = {
-    id: 'projects',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: 'Ahmet Tugsuz',
-    headline: 'Full Stack Devolopper',
-    description: 'More about me',
-    imgStart: true,
-    img: require('../../images/mitt-bilde.png'),
-    alt: 'Me',
-    dark: false,
-    primary: false,
-    darkText: true
 };
