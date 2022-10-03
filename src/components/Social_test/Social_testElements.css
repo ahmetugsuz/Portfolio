@@ -1,0 +1,145 @@
+
+
+
+.footer_Container{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+}
+
+.rowbox_container_social{
+    height: 100%;
+    width: 100%;
+    height: 20vh;
+}
+
+.columnBox_social{
+    float: left;
+    height: 100%;
+    position: relative;
+    height: 20vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.left_side_social{
+    width: 34%;
+}
+.middle_side_social{
+    width: 33%;
+}
+.right_side_social{
+    width: 33%;
+}
+
+
+.leftSideInfo{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.3rem;
+
+}
+
+.middleSideInfo{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 1rem;
+
+}
+
+.rightSideInfo{
+    color: white;
+    padding: 0.6rem;
+    width: 4rem;
+}
+
+.social_h2{
+    width: 100%;
+}
+
+.leftSideContainer{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+}
+
+.middleSideContainer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+}
+
+.rightSideContainer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+}
+
+@media screen and (min-height: 1300px) {
+    .footer_Container{
+        position: relative;
+        height: 20%;
+        height: 20rem;
+        background-color: red;
+        border: solid red 3px;
+    }
+
+
+
+}
+
+@media screen and (max-height: 968px) {
+    .rowbox_container_social{
+        height: 30vh;
+    }
+
+    .left_side_social{
+        width: 25%;
+    }
+    .middle_side_social{
+        width: 50%;
+    }
+    .right_side_social{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .rowbox_container_social{
+        height: 55vh;
+    }
+
+    .leftSideInfo{
+
+        padding-top: 1rem;
+        font-size: 0.9rem;
+    
+    }
+    
+    .middleSideInfo{
+        color: white;
+        font-size: 0.9rem;
+        text-align: center;
+        padding-top: 1rem;
+    
+    }
+
+    .rightSideInfo{
+        font-size: 1rem;
+        padding-top: 2rem;
+        width: 40%;
+    }
+
+
+
+}
+

@@ -9,8 +9,9 @@
 
 @media screen and (min-width: 1800px) {
     .contactContainer{
-        height: 90vh;
+        height: 70vh;
     }
+
 }
 
 .inputContainer{
@@ -68,13 +69,10 @@
 .rettStrek{
     border: solid whitesmoke 2px;
     left: 0;
-
-
 }
 
 .straightLine{
     border: solid white 1px;
-
     width: 100;
 }
 
@@ -177,14 +175,17 @@
     left: 0;
     margin-left: -100px;
 
-    width: 50%;
+    width: 55.5rem;
     height: 100%;
+
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 40%, transparent 76%);
 }
 
 .bildeAvMeg{
     width: 78%;
     opacity: 0.9;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .bildeAvMeg:after{
@@ -194,5 +195,280 @@
 @media screen and (min-width: 1800px) {
     .bildeContainer{
         height: 90%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .textField{
+        font-size: large;
+        width: 500px;
+
+    
+    }
+
+    .bildeContainer{
+        position: absolute;
+        left: 0;
+        margin-left: -100px;
+        width: 40rem;
+        mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 60%, transparent 100%);
+    }
+    .bildeAvMeg{
+        width: 100%;
+        height: 90vh;
+        
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .bildeContainer{
+        position: absolute;
+        left: 0;
+        margin-left: -100px;
+        width: 19rem;
+        mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 60%, transparent 100%);
+    }
+    .bildeAvMeg{
+        width: 100%;
+        height: 90vh;
+        
+    }
+
+    .inputContainer{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        justify-content: center;
+        padding: 55px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        margin-left: 150px;
+        z-index: 3;
+    
+    }
+    
+    .overtekst{
+        padding: 5px;
+        font-size: small;
+        padding-top: 20px;
+    }
+    
+    .toplineV2{
+        color: aqua;
+        font-family: fantasy;
+        font-size: 1.1rem;
+        margin-left: 50px;
+    }
+    
+    .textField{
+        font-size: medium;
+        width: 100%;
+
+        height: 40px;
+        border-radius: 5px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+    
+    }
+    
+    .meldingSection{
+        border-radius: 10px;
+        font-size: large;
+        padding-right: 15px;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .footerContainer{
+        position: relative;
+
+    }
+
+    .footerAboutMe{
+        left: 0;
+        margin-left: 30px;
+        margin-top: 100px;
+    }
+    
+    .footerThisWebsite{
+
+        justify-content: center;
+
+
+        width: 50%;
+        margin-left: 150px;
+    }
+    
+    .footerSocial{
+        margin: 0;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        margin-right: 50px;
+        right: 0;
+        margin-top: -12px;
+    }
+
+    .V3{
+        padding-left: 10px;
+        font-size: small;
+    }
+    
+    .createdBy{
+        justify-content: center;
+        margin: 0;
+        text-align: center;
+        right: 0;
+        left: 0;
+        padding: 5px;
+    }
+    
+    .createdV2{
+        padding-right: 1.5rem;
+        padding-left: 3.5rem;
+        letter-spacing: 3px;
+        margin-left: -35px;
+        font-size: small;
+        width: 50%;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        margin-left: 10px;
+
+    }
+    
+    .goodbye{
+        font-family: fantasy;
+        color: aqua;
+    }
+    
+    .linkedin{
+        width: 25%;
+        position: absolute;
+        background-color: black;
+        margin-left: 20px;
+        margin-top: 1.2rem;
+    
+    }
+    
+    .github{
+        width: 25%;
+        position: absolute;
+        margin-left: -30px;
+        color: #010606;
+        margin-top: 1.2rem;
+    }
+    
+    .email{
+        bottom: 0;
+    }
+    
+}
+
+@media screen and (max-height: 768px) {
+    .contactContainer{
+        height: 150vh;
+        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: 100%;
+    }
+
+    .inputContainer{
+        padding: 20px;
+        margin-left: 120px;
+        z-index: 1;
+        font-size: medium;
+    }
+
+    .textField{
+        padding-left: 10px;
+
+    }
+
+    .overtekst{
+        font-size: small;
+    }
+
+    .toplineV2{
+        font-size: small;
+    }
+
+    .meldingSection{
+        height: 70%;
+        margin-left: -2px;
+        font-size: small;
+    }
+
+    .V8{
+        font-size: x-large;
+    }
+
+    .V2{
+        font-size: medium;
+    }
+
+    .bildeContainer{
+        position: absolute;
+        left: 0;
+        margin-left: -100px;
+        width: 16rem;
+        height: 100%;
+        z-index: 0;
+        mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 40%, transparent 76%);
+    }
+    
+    .bildeAvMeg{
+        width: 78%;
+        opacity: 0.9;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    .typ2{
+        margin-top: 10px;
+    }
+
+    .footerContainer{
+        justify-content: center;
+        margin: 0;
+        position: relative;
+        width: 100%;
+        margin-top: -350px;
+    }
+
+    .footerThisWebsite{
+        right: 0;
+        top: 0;
+        margin-right: 200px;
+        margin-top: 50px;
+        
+    }
+
+    .createdBy{
+        margin-right: -50px;
+        justify-content: center;
+    }
+
+    .createdV2{
+        margin: auto;
+        position: absolute;
+    }
+
+    .footerAboutMe{
+        position: absolute;
+        left: 0;
+        margin-top: 55px;
+    }
+
+    .footerSocial{
+        position: absolute;
+        left: 0;
+        width: 20%;
+        margin-top: 150px;
+        margin-left: 30px;
     }
 }

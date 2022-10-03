@@ -18,10 +18,10 @@ function Social() {
                 </div>
                 <div className='footerSocial'>
                     <h2 className='overLinjaTekst V3'>Some Socials</h2>
-                    <a href={"https://www.linkedin.com/in/ahmet-tugsuz-7b6240210/"}>
+                    <a href={"https://www.linkedin.com/in/ahmet-tugsuz-7b6240210/"} target="_blank">
                         <img className='linkedin' src={linkedIn} />
                     </a>
-                    <a href='https://github.com/ahmetugsuz'>
+                    <a href='https://github.com/ahmetugsuz' target="_blank">
                         <img className='github' src={github} />
                     </a>
                 </div>

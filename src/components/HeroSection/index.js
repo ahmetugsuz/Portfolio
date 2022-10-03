@@ -7,11 +7,12 @@ import linkedIn from '../../images/linkedInBlackWhite.webp';
 import github from '../../images/gitWhite.png';
 import {Button} from '../ButtonElement';
 import bildeAvMeg from '../../images/bildeAvMeg.png';
+import hand from '../../images/Hand.png';
 import TypeWriter from 'typewriter-effect';
 function Hero() {
   const[hover, setHover] = useState(false);
 
-  var tekst = "Hello world, I'm Ahmet, a 2000´s child and like many born of the generation, my relationship with computers started the day I was born. In this website I am going to take you through about my self, skills and projects. Take a seat and..."
+  const tekst = "Hi, Thanks so much for stopping by!\n My name is Ahmet. Im a 2000´s kid whos always been in love with computers. Through this website you´ll get to know all about me and my areas of expertise, in the field of computer science. Happy scrolling!"
 
   const onHover = () =>{
     setHover(!hover);
@@ -19,15 +20,18 @@ function Hero() {
   return (
     <HeroContainer>
         <HeroBg className='HeroBg'>
-            <VideoBg className='VideoBg' autoPlay loop muted src={Video} type='video/mp4'/>
+            <VideoBg className='VideoBg' autoPlay loop muted playsinline src={Video} type='video/mp4' id="video-background" poster="images/poster.jpg"/>
         </HeroBg>
         <div className='heroSocials'>
-        <a href={"https://www.linkedin.com/in/ahmet-tugsuz-7b6240210/"}>
+        <a href={"https://www.linkedin.com/in/ahmet-tugsuz-7b6240210/"} target="_blank">
           <img src={linkedIn} className="linkedinV2"/>
         </a>
-        <a href='https://github.com/ahmetugsuz'>
+        <a href='https://github.com/ahmetugsuz' target="_blank">
           <img src={github} className="githubV2"/>
         </a>
+        </div>
+        <div className='helloWorld'>
+
         </div>
         <div className='introduksjon'>
           <div className='introduksjonTekst'>
@@ -35,7 +39,7 @@ function Hero() {
             options={{
               autoStart: true,
               loop: false,
-              delay: 50,
+              delay: 30,
             }}
             onInit={(typewriter) => {
               typewriter.typeString(tekst)

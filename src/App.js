@@ -13,6 +13,9 @@ import Knowledge from './components/KnowledgeSection';
 import Project from './components/ProjectSection';
 import Contact from './components/Contact.js';
 import Social from './components/Social';
+import Contact_test from './components/Contact_test';
+import Social_test from './components/Social_test';
+
 
 const Image = () => {
   return (
@@ -38,8 +41,8 @@ function App() {
       <Quote />
       <Knowledge />
       <Project />
-      <Contact />
-      <Social />
+      <Contact_test />
+      <Social_test />
     </Router>
 
     

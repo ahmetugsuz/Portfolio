@@ -3,4 +3,21 @@
     background-color: black;
     height: 20vh;
     border: solid black 1px;
+    
+}
+
+
+@media screen and (max-height: 968px) {
+    .socialContainer{
+        height: 35vh;
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-height: 768px){
+    .socialContainer{
+        height: 0vh;
+
+        width: 90%;
+    }
 }

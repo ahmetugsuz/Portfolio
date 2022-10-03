@@ -1,0 +1,276 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.Contact_Container{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.rowbox_container{
+    height: 100%;
+    width: 100%;
+}
+
+.rowbox_container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columnBox_contact{
+    float: left;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.left_side{
+    width: 40%;
+}
+
+.right_side{
+    width: 60%;
+}
+
+.bildeContainer_contact{
+    width: 100%;
+    height: 100%;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 50%, transparent 86%);
+}
+
+.bildeAvMeg_contact{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit:cover;
+}
+
+.bildeAvMeg_contact::after{
+    background:linear-gradient(rgba(20, 117, 150, 0.266), rgba(0, 0, 0, 0.559));
+}
+
+.headline_Contact{
+    padding-top: 30px;
+    padding-bottom: 2rem;
+}
+
+
+.topline_contact{
+    color: aqua;
+    font-family: fantasy;
+    font-size: 1.2rem;
+}
+
+.heading_contact{
+    font-size: xx-large;
+}
+
+.meldingContainer_contact{
+    justify-content: center;
+    margin: auto;
+    height: 100%;
+    text-align: center;
+    width: 55%;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+.innholdOverdel_contact{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 8%;
+
+}
+
+.Contact_headline1{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.Contact_headline2{
+    font-size: 1.6rem;
+    align-self: flex-end;
+    padding-left: 5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 30px;
+}
+
+.rettStrek_contact{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border: solid whitesmoke 2px;
+}
+
+.inputContainer_contact{
+    position: relative;
+    display: grid;
+    z-index: 3;
+    align-items: end;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    font-size: large;
+
+}
+
+.overtekst_contact{
+    padding: 10px;
+    font-size: large;
+    display: flex;
+    flex-direction: end;
+    padding-top: 2rem;
+}
+
+.textField_contact{
+    font-size: large;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+
+.meldingSection_contact{
+    border-radius: 10px;
+    font-size: large;
+    padding-right: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 100%;
+
+}
+
+
+
+
+@media (max-height: 968px) {
+
+    .rowbox_container{
+        height: 105vh;
+    }
+
+
+    .innholdOverdel_contact{
+        height: 10%;
+        font-size: medium;
+    }
+
+
+
+    .topline_contact{
+        padding-top: 5px;
+        font-size: 0.8rem;
+    }
+
+    .heading_contact{
+        font-size: x-large;
+    }
+
+    .Contact_headline2{
+        font-size: 1.3rem;
+    }
+
+    .inputContainer_contact{
+        padding-top: 0rem;
+        
+    }
+
+    .overtekst_contact{
+        font-size: medium;
+    }
+
+    .textField_contact{
+        font-size: medium;
+    }
+}
+
+@media screen and (max-height: 800px) {
+
+    .Contact_Container{
+        overflow-x: hidden;
+    }
+
+    .rowbox_container{
+        overflow-x: hidden;
+        overflow: hidden;
+    }
+
+    .innholdOverdel_contact{
+
+        height: 7%;
+        font-size: medium;
+    }
+
+    .headline_Contact{
+        padding-top: 1px;
+        padding-bottom: 0.5rem;
+    }
+
+    .Contact_headline2{
+        display: flex;
+        padding-left: 5px;
+        font-size: 1rem;
+    }
+
+
+    .left_side{
+        width: 40%;
+    }
+
+    .right_side{
+        width: 60%;
+    }
+
+    .bildeAvMeg_contact{
+        margin-left: -30px;
+
+    }
+
+    .inputContainer_contact{
+        padding-top: 0rem;
+
+        bottom: 0;
+        padding-right: 10px;
+    }
+
+    .rettStrek_contact{
+        width: 90%;
+    }
+
+    .meldingContainer_contact{
+        width: 100%;
+    }
+
+    .overtekst_contact{
+        font-size: small;
+    }
+
+    .textField_contact{
+        font-size: small;
+    }
+
+    .button_contact{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 10px;
+    }
+
+    
+}
+
+
+@media screen and (min-height: 1200px){
+    .rowbox_container{
+        height: 80vh;
+    }
+}
+

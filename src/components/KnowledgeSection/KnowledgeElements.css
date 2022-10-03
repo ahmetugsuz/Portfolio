@@ -1,10 +1,11 @@
 body{
     overflow-x: hidden;
-    scroll-behavior: smooth;
+
 }
 
 .KnowledgeContainer{
-    height: 110vh;
+    height: 100%;
+    width: 100%;
     background-color: #010606;
     justify-content: center;
     text-align: center;
@@ -28,7 +29,7 @@ body{
 
 .languages{
     padding-top: 70px;
-    width: 900px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-columns: auto auto auto;
@@ -38,17 +39,15 @@ body{
     margin: auto;
     right: 0;
     left: 0;
-
-
 }
 
 .languageBilde{
     width: 220px;
-    padding: 10px;
     opacity: 0.55;
     transition: transform 0.7s ease;
-    
+    z-index: 33;
 }
+
 
 .languageBilde::after, .languageBilde::before{
     
@@ -82,15 +81,13 @@ body{
 
 
 .goalsContainer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     justify-content: center;
     right: 0;
     left: 0;
     margin: auto;
     margin-bottom: -5px;
-
-
 
 }
 
@@ -186,4 +183,641 @@ body{
     margin-left: 50px;
     z-index: -33;
 
+}
+
+
+
+@media screen and (max-width: 1600px) {
+    
+    .languageBilde{
+        width: 180px;
+    }
+    .languageBilde:hover{
+        transform: translate(16px, -20px);
+        width: 200px;
+        opacity: 1;
+    }
+
+    .venstreInfo{
+        border: solid #4A1097 2px;
+        border-radius: 500px;
+        width: 100%;
+    }
+    
+    .info2{
+        border: solid #180238 2px;
+        margin-top: 400px;
+    }
+    
+    .venstreInfoTekst{
+        font-size: 10px;
+        margin-top: 50px;
+        width: 60%;
+        margin-left: -160px;
+    }
+
+    .venstreInfoTekst2{
+        font-size: 10px;
+        right: 0;
+        width: 40%;
+        margin-right: -500px;
+        margin-top: -250px;
+    
+        z-index: -33;
+    
+    }
+    
+    .venstreBilde{
+        position: absolute;
+        margin-right: -530px;
+        margin-top: -100px;
+        right: 0;
+        width: 60%;
+        margin-top: 0px;
+    }
+    
+    .venstreBilde2{
+        position: absolute;
+        width: 70%;
+        left: 0;
+        margin-left: -170px;
+        margin-top: 200px;
+    }
+
+    .middleInfoTekst{
+        font-size: 14px;
+        position: absolute;
+        color: aliceblue;
+        
+    
+    }
+    
+    .venstreInfoTekstRight{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        position: absolute;
+        color: white;
+        margin-top: 50px;
+        width: 70%;
+        margin-left: 50px;
+        z-index: -33;
+    
+    }
+
+    .middleBilde{
+        width: 50%;
+        margin-right: -600px;
+        margin-top: -20px;
+    }
+    .middleBilde2{
+        width: 50%;
+        margin-left: -140px;
+        margin-top: 250px;
+    }
+
+    .middleInfoTekst{
+        font-size: 10px;
+        width: 55%;
+        margin-left: -830px;
+        margin-top: 320px;
+    }
+
+    .middleTekst2{
+
+        font-size: 10px;
+        margin-left: 1000px;
+        margin-top: -150px;
+    }
+
+    .hoyreBilde{
+        margin-right: -650px;
+        right: 0;
+        width: 55%;
+        margin-top: 110px;
+    }
+
+    .hoyreBilde2{
+        margin-left: -110px;
+        margin-top: 300px;
+        width: 55%;
+    }
+
+    .hoyreInfoTekst{
+        font-size: 10px;
+        width: 60%;
+        margin-left: -120px;
+        margin-top: 200px;
+    }
+
+    .hoyreInfoTekst2{
+        font-size: 10px;
+        width: 60%;
+        margin-left: -40px;
+        margin-top: 200px;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    
+    .languageBilde{
+        width: 180px;
+    }
+    .languageBilde:hover{
+        transform: translate(16px, -20px);
+        width: 200px;
+        opacity: 1;
+    }
+
+    .venstreInfo{
+        border: solid #4A1097 2px;
+        border-radius: 500px;
+        width: 100%;
+    }
+    
+    .info2{
+        border: solid #180238 2px;
+        margin-top: 400px;
+    }
+    
+    .venstreInfoTekst{
+        font-size: 9px;
+        margin-top: 50px;
+        width: 60%;
+        margin-left: -130px;
+    }
+
+    .venstreInfoTekst2{
+        font-size: 9px;
+        right: 0;
+        width: 40%;
+        margin-right: -430px;
+        margin-top: -200px;
+    
+        z-index: -33;
+    
+    }
+    
+    .venstreBilde{
+        position: absolute;
+        margin-right: -450px;
+        margin-top: 0px;
+        right: 0;
+        width: 60%;
+        margin-top: 0px;
+    }
+    
+    .venstreBilde2{
+        position: absolute;
+        width: 70%;
+        left: 0;
+        margin-left: -130px;
+        margin-top: 200px;
+    }
+
+    .middleInfoTekst{
+        font-size: 14px;
+        position: absolute;
+        color: aliceblue;
+        
+    
+    }
+    
+    .venstreInfoTekstRight{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        position: absolute;
+        color: white;
+        margin-top: 50px;
+        width: 70%;
+        margin-left: 50px;
+        z-index: -33;
+    
+    }
+
+    .middleBilde{
+        width: 50%;
+        margin-right: -540px;
+        margin-top: -50px;
+    }
+    .middleBilde2{
+        width: 50%;
+        margin-left: -90px;
+        margin-top: 250px;
+    }
+
+    .middleInfoTekst{
+        font-size: 8px;
+        width: 55%;
+        margin-left: -780px;
+        margin-top: 320px;
+    }
+
+    .middleTekst2{
+
+        font-size: 8px;
+        margin-left: 930px;
+        margin-top: -150px;
+    }
+
+    .hoyreBilde{
+        margin-right: -580px;
+        right: 0;
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    .hoyreBilde2{
+        margin-left: 0px;
+        margin-top: 200px;
+        width: 50%;
+    }
+
+    .hoyreInfoTekst{
+        font-size: 7px;
+        width: 50%;
+        margin-left: -20px;
+        margin-top: 200px;
+    }
+
+    .hoyreInfoTekst2{
+        font-size: 7px;
+        width: 50%;
+        margin-left: -120px;
+        margin-top: 200px;
+    }
+}
+
+
+@media screen and (max-width: 980px)  {
+
+
+
+    .toplineLanguages{
+        font-size: 1.5rem;
+    }
+
+    .languages{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+
+    }
+    .languageBilde{
+        width: 150px;
+    }
+
+    .languageBilde:hover{
+        transform: translate(16px, -20px);
+        width: 170px;
+        opacity: 1;
+    }
+
+    .venstreInfo{
+        border: solid #4A1097 2px;
+        border-radius: 500px;
+        width: 100%;
+    }
+    
+    .info2{
+        border: solid #180238 2px;
+        margin-top: 400px;
+    }
+    
+    .venstreInfoTekst{
+        font-size: 8px;
+        margin-top: 50px;
+        width: 60%;
+        margin-left: -130px;
+    }
+
+    .venstreInfoTekst2{
+        font-size: 8px;
+        right: 0;
+        width: 40%;
+        margin-right: -130px;
+        margin-top: -130px;
+    
+        z-index: -33;
+    
+    }
+    
+    .venstreInfoContainer{
+        position: absolute;
+        padding-top: 50px;
+    }
+    
+    .venstreBilde{
+        position: absolute;
+        margin-right: -150px;
+        margin-top: 0px;
+        right: 0;
+        width: 50%;
+        margin-top: 0px;
+    }
+    
+    .venstreBilde2{
+        position: absolute;
+        width: 50%;
+        left: 0;
+        margin-left: -130px;
+        margin-top: 200px;
+    }
+    
+    .frontendContainer{
+    
+    }
+    
+    .middleInfoTekst{
+        font-size: 14px;
+        position: absolute;
+        color: aliceblue;
+        
+    
+    }
+    
+    .venstreInfoTekstRight{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        position: absolute;
+        color: white;
+        margin-top: 50px;
+        width: 50%;
+        margin-left: 50px;
+        z-index: -33;
+    
+    }
+
+    .middleBilde{
+        width: 50%;
+        margin-right: -400px;
+        margin-top: -50px;
+    }
+    .middleBilde2{
+        width: 50%;
+        margin-left: 100px;
+        margin-top: 250px;
+    }
+
+    .middleInfoTekst{
+        font-size: 8px;
+        width: 55%;
+        margin-left: -620px;
+        margin-top: 320px;
+    }
+
+    .middleTekst2{
+
+        font-size: 8px;
+        margin-left: 780px;
+        margin-top: -50px;
+    }
+
+    .hoyreBilde{
+        margin-right: -580px;
+        right: 0;
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    .hoyreBilde2{
+        margin-left: 290px;
+        margin-top: 200px;
+        width: 50%;
+    }
+
+    .hoyreInfoTekst{
+        font-size: 7px;
+        width: 50%;
+        margin-left: 260px;
+        margin-top: 200px;
+    }
+
+    .hoyreInfoTekst2{
+        font-size: 7px;
+        width: 50%;
+        margin-left: -120px;
+        margin-top: 100px;
+    }
+
+    .toplineGoals{
+        font-size: 0;
+    }
+
+    .goals{
+        width: 0px;
+    }
+}
+
+
+@media screen and (max-width: 700px)  {
+
+
+    .venstreInfoTekst{
+        font-size: 7px;
+        margin-top: 50px;
+        width: 60%;
+        margin-left: -100px;
+    }
+
+    .venstreInfoTekst2{
+        font-size: 7px;
+        right: 0;
+        width: 45%;
+        margin-right: -115px;
+        margin-top: -200px;
+    
+        z-index: -33;
+    
+    }
+    
+    .venstreInfoContainer{
+        position: absolute;
+        padding-top: 50px;
+    }
+    
+    .venstreBilde{
+        margin-right: -120px;
+        margin-top: 0px;
+        right: 0;
+        width: 45%;
+        margin-top: -310px;
+    }
+    
+    .venstreBilde2{
+        width: 70%;
+        left: 0;
+        margin-left: -130px;
+        margin-top: -200px;
+    }
+
+    .middleBilde{
+        width: 40%;
+        margin-right: -360px;
+        margin-top: -600px;
+    }
+    .middleBilde2{
+        width: 45%;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+
+    .middleInfoTekst{
+        font-size: 6px;
+        width: 50%;
+        margin-left: -600px;
+        margin-top: 150px;
+    }
+
+    .middleTekst2{
+        width: 40%;
+        font-size: 6px;
+        margin-left: 750px;
+        margin-top: 50px;
+    }
+
+    .hoyreBilde{
+        margin-right: -560px;
+        right: 0;
+        width: 50%;
+        margin-top: -100px;
+    }
+
+    .hoyreBilde2{
+        margin-left: 300px;
+        margin-top: -190px;
+        width: 60%;
+    }
+
+    .hoyreInfoTekst{
+        font-size: 6px;
+        width: 40%;
+        margin-left: 300px;
+        margin-top: 220px;
+    }
+
+    .hoyreInfoTekst2{
+        font-size: 6px;
+        width: 40%;
+        margin-left: -150px;
+        margin-top: 120px;
+    }
+
+    .goals{
+        width:0%
+    }
+
+    .toplineGoals{
+        font-size: 0px;
+    }
+}
+@media (max-height: 800px) {
+
+    .KnowledgeContainer{
+        overflow: hidden;
+        overflow-y: hidden;
+    }
+
+
+    .venstreInfoTekst{
+        font-size: 7px;
+        margin-top: 50px;
+        width: 50%;
+        margin-left: -100px;
+    }
+
+    .venstreInfoTekst2{
+        font-size: 7px;
+        right: 0;
+        width: 40%;
+        margin-right: -115px;
+        margin-top: -200px;
+    
+        z-index: -33;
+    
+    }
+    
+    .venstreInfoContainer{
+        position: absolute;
+        padding-top: 50px;
+    }
+    
+    .venstreBilde{
+        margin-right: -120px;
+        margin-top: 0px;
+        right: 0;
+        width: 45%;
+        margin-top: -310px;
+    }
+    
+    .venstreBilde2{
+        width: 70%;
+        left: 0;
+        margin-left: -130px;
+        margin-top: -200px;
+    }
+
+    .middleBilde{
+        width: 40%;
+        margin-right: -360px;
+        margin-top: -650px;
+    }
+    .middleBilde2{
+        width: 45%;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+
+    .middleInfoTekst{
+        font-size: 6px;
+        width: 50%;
+        margin-left: -600px;
+        margin-top: 150px;
+    }
+
+    .middleTekst2{
+        width: 40%;
+        font-size: 6px;
+        margin-left: 740px;
+        margin-top: 50px;
+    }
+
+    .hoyreBilde{
+        margin-right: -560px;
+        right: 0;
+        width: 50%;
+        margin-top: -100px;
+    }
+
+    .hoyreBilde2{
+        margin-left: 300px;
+        margin-top: -190px;
+        width: 60%;
+    }
+
+    .hoyreInfoTekst{
+        font-size: 6px;
+        width: 40%;
+        margin-left: 300px;
+        margin-top: 220px;
+    }
+
+    .hoyreInfoTekst2{
+        font-size: 6px;
+        width: 40%;
+        margin-left: -150px;
+        margin-top: 120px;
+    }
+
+    .goalsContainer{
+        width: 0;
+    }
+
+    .goals{
+        width:0%
+    }
+
+    .toplineGoals{
+        font-size: 0px;
+    }
 }

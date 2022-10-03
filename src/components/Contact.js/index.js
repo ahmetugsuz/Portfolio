@@ -29,9 +29,10 @@ const Contact = () => {
             <div className='bildeContainer'>
                 <img src={bildeAvMeg} className="bildeAvMeg" />
             </div>
+            <div className='meldingContainer'>
             <div className='inputContainer'>
                 <p className='toplineV2'>Get in Touch</p>
-                <h2 className='heading'>Contact Me</h2>
+                <h2 className='heading V8'>Contact Me</h2>
             </div>
             <form className='inputContainer' ref={form} onSubmit={sendEmail}>
             <div className='innholdOverdel'>
@@ -49,6 +50,7 @@ const Contact = () => {
                 <ToastContainer />
             </form>
             <div className='straightLine'/> 
+            </div>
     
 
 

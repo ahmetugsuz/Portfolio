@@ -22,3 +22,20 @@
     color: rgb(133, 128, 128);
     font-weight: 100;
 }
+
+@media screen and (max-height: 700px){
+    .quote{
+        font-size: 11px;
+    }
+    .Alan{
+        font-size: 11px;
+    }
+}
+@media screen and (max-height: 900px){
+    .quote{
+        font-size: 13px;
+    }
+    .Alan{
+        font-size: 13px;
+    }
+}

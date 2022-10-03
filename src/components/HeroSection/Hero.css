@@ -86,7 +86,7 @@
 }
 
 .introduksjonTekst{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 300;
     letter-spacing: 0.15rem;
     font-style: italic;
@@ -112,3 +112,57 @@
     width: 15%;
 }
 
+@media screen and (max-width: 768px) {
+    .introduksjonTekst{
+        font-size: 1.1rem;
+    }
+
+    .linkedinV2{
+        width: 80%;
+    }
+
+    .githubV2{
+        width: 80%;
+    }
+}
+
+.helloWorld{
+    position: absolute;
+    left: 0;
+    margin: 0;
+    margin-top: -200px;
+    padding: 50px;
+}
+
+.overskriftHero{
+    color: aliceblue;
+    font-family: cursive;
+    padding-bottom: 15px;
+}
+
+
+
+
+@media screen and (max-height: 768px) {
+    .HeroBg{
+
+        background:linear-gradient(rgba(14, 70, 88, 0.48), rgba(0, 0, 0, 0.67));
+    }
+
+    .introduksjonTekst{
+        font-size: 1rem;
+    }
+
+    .VideoBg{
+        opacity: 0;
+        width: 0;
+    }
+    
+    .linkedinV2{
+        width: 100%;
+    }
+
+    .githubV2{
+        width: 100%;
+    }
+}

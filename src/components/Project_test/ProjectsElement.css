@@ -1,0 +1,599 @@
+.projectsCont{
+
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 30px;
+    height: 600vh;
+}
+
+.ColumnText, .ColumnImage{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.rowObject{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    z-index: -1;
+
+}
+
+.leftside{
+    width: 100%;
+}
+
+.rightside{
+    width: 100%;
+    margin-right: 300px;
+}
+
+.ColumnText{
+    left: 0;
+
+}
+
+.ColumnImage{
+    right: 0;
+
+}
+
+.toplineProject{
+    font-size: 1.7rem;
+    font-family: cursive;
+    font-weight: 100;
+    letter-spacing: 1.7px;
+    padding-bottom: 30px;
+
+}
+
+.intro{
+    width: 30%;
+    overflow: auto;
+}
+
+
+.first{
+    position: absolute;
+    width: 28%;
+
+}
+
+.second{
+    position: absolute;
+    right: 0;
+    width: 45%;
+    padding-top: 50px;
+    padding-left: 60px;
+
+}
+
+.last{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    width: 35%;
+    padding-top: 500px;
+    margin-left: 50px;
+
+}
+
+.introSide{
+    position: relative;
+
+}
+
+.intro1{
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 28%;
+    justify-content: center;
+    margin: auto;
+    top: 0;
+    text-align: center;
+    margin-left: 250px;
+    margin-top: 50px;
+
+}
+
+.intro2{
+    position: absolute;
+    right: 0;
+    width: 45%;
+    padding-top: 50px;
+    padding-left: 60px;
+
+}
+
+.intro3{
+    position: absolute;
+    width: 30%;
+    bottom: 0;
+    justify-content: center;
+    margin: auto;
+    right: 0;
+    left: 0;
+
+    margin-left: 350px;
+    margin-bottom: -200px;
+
+}
+
+.underline{
+    width: 35.5rem;
+    padding: 50px;
+
+    letter-spacing: 1.3px;
+    font-size: 1.4rem;
+}
+
+.firstUnderline{
+    margin-right: 200px;
+}
+
+
+.secondUnderline{
+    margin-left: 200px;
+}
+
+.appHomePage{
+    margin-top: 150px;
+    padding-bottom: 50px;
+}
+
+.searchPage{
+    margin-top: 250px;
+}
+
+.settingsPage{
+    margin-top: 750px;   
+}
+
+.appHomePageHeadline{
+    padding-bottom: 50px;
+}
+
+.homeImages{
+    margin-top: 270px;
+    width: auto;
+    height: 120vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-left: 300px;
+    width: 70%;
+    right: 0;
+}
+
+.homePageImage{
+    position: absolute;
+    margin-left: 100px;
+    width: 11.2rem;
+}
+
+
+.homePageImage{
+    margin-top: 230px;
+    width: 65%;
+    margin-left: 100px;
+
+}
+
+
+
+.mapPageImage{
+    margin-right: -100px;
+    margin-top: 50px;
+    width: 80%;
+}
+
+
+.mapImages{
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.mapImage{
+    position: absolute;
+    width: 28%;
+    top: 0;
+    justify-content: center;
+    margin: auto;
+    right: 0;
+    left: 0;
+    margin-left: 230px;
+}
+
+.favorite{
+    position: absolute;
+    width: 28%;
+    bottom: 0;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    right: 0;
+    left: 0;
+    margin-left: 350px;
+    margin-bottom: 70px;
+}
+
+
+
+.searchImage{
+    height: 130vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.severalSearch{
+    position: absolute;
+    width: 30%;
+    top: 0;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.clickedSearch{
+    position: absolute;
+    width: 30%;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 100px;
+}
+
+.sokeResultat{
+    position: absolute;
+    width: 35%;
+    right: 0;
+    margin-top: 100px;
+}
+
+.setting{
+    position: relative;
+    margin-top: 150px;
+}
+
+.settingImg{
+    width: 47%;
+    margin-left: 200px;
+    position: absolute;
+
+}
+
+.darkModeImg{
+    width: 45%;
+    margin-top: 350px;
+}
+
+.colorBlindImg{
+    
+}
+
+
+
+@media (min-width: 1800px) {
+    .projectsCont{
+        height: 450vh;
+    }
+    .rightside{
+        width: 50%;
+    }
+
+    .introSide{
+        width: 80%;
+    }
+
+    .homeImages{
+        margin-top: -50px;
+        margin-left: 300px;
+    }
+    .homePageImage{
+        margin-left: 0px;
+    }
+    .mapPageImage{
+        margin-right: 100px;
+    }
+    .mapImages{
+        margin-top: -500px;
+        height: 100vh;
+
+    }
+    .mapImage{
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 50%;
+    }
+
+    .favorite{
+        margin-left: 100px;
+        margin-top: 400px;
+        width: 50%;
+    }
+
+    .searchImage{
+        margin-top: -250px;
+        margin-left: 180px;
+        width: 80%;
+    }
+    .clickedSearch{
+        margin-top: 850px;
+        margin-right: 35px;
+
+    }
+    .severalSearch{
+        margin-top: 100px;
+        margin-left: -0px;
+
+    }
+    .setting{
+        margin-top: -100px;
+        width: 60%;
+
+    }
+}
+
+@media screen and (max-height: 968px) {
+    
+    .projectsCont{
+        height: 660vh;
+    }
+
+    .underline{
+        width: 25rem;
+        font-size: 16px;
+    }
+
+    .intro1{
+        width: 35%;
+    }
+
+    .intro2{
+        width: 55%;
+        margin-right: -100px;
+    }
+    .intro3{
+        margin-bottom: 100px;
+        width: 35%;
+        margin-left: 150px;
+
+    }
+
+    .leftside{
+        width: 80%;
+        right: 0;
+        margin-right: 100px;
+    }
+
+    .rightside{
+        width: 80%;
+        margin-left: -100px;
+
+    }
+
+    .mapImages{
+        margin-top: 200px;
+        padding: 200px;
+    }
+
+    .searchImage{
+        margin-top: 100px;
+    }
+
+    .ColumnText{
+        height: 90%;
+    }
+
+    .mapText{
+        margin-top: 0px;
+    }
+
+    .homePageImage{
+        width: 50%;
+        margin-top: 400px;
+    }
+
+    .mapImage{
+        margin-top: 100px;
+        width: 32%;
+        margin-left: 100px;
+    }
+
+    .favorite{
+        margin-bottom: 100px;
+        width: 35%;
+        margin-left: 200px;
+    }
+
+    .clickedSearch{
+        margin-bottom: 370px;
+    }
+
+    .setting{
+        margin-top: 300px;
+    }
+
+    .settingImg{
+        width: 40%;
+        margin-top: 200px;
+    }
+
+}
+
+
+@media screen and (max-height: 768px) {
+    
+    .logo{
+        width: 50%;
+    }
+
+    .projectsCont{
+        height: 600vh;
+    }
+
+    .leftside{
+        width: 60%;
+        margin-right: 200px;
+        
+    }
+
+    .rightside{
+        width: 20%;
+        margin-right: 100px;
+        margin-left: -190px;
+        border: solid red 2px;
+        
+    }
+
+
+    .underline{
+        padding: 15px;
+        width: 12rem;
+        font-size: 9px;
+    }
+
+    .firstUnderline{
+        margin-right: 50px;
+    }
+    
+    .secondUnderline{
+        margin-left: 50px;
+    }
+
+        .introSide{
+        width: 50%;
+        
+    }
+
+    .intro1{
+        margin-top: 50px;
+        width: 80%;
+   
+    }
+
+    .intro2{
+        margin-top: 320px;
+        margin-right: -220px;
+        width: 9rem;
+    }
+
+    .intro3{
+        margin-bottom: 0px;
+        left: 0;
+        width: 75%;
+        margin-left: 220px;
+    }
+
+    .mapImages{
+        border: solid green 3px;
+        margin-top: 200px;
+        padding: 190px;
+        margin-right: 360px;
+        height: 90%;
+    }
+
+
+    .mapImage{
+        width: 23%;
+        margin-left: 270px;
+
+    }
+
+    .favorite{
+        width: 23%;
+        margin-left: 250px;
+
+        margin-bottom: 110px;
+    }
+
+    .searchImage{
+        margin-top: 100px;
+    }
+
+    .ColumnText{
+        height: 70%;
+        left: 0;
+    }
+
+    .ColumnImage{
+        left: 0;
+        width: 90%;
+        margin-left: -275px;
+    }
+
+
+    .homeImages{
+        width: 50%;
+        height: 75%;
+        margin-left: 70px;
+        margin-top: 50px;
+    }
+
+    .homePageImage{
+        margin-left: 10px;
+        width: 90%;
+        margin-top: 200px;
+    }
+
+
+    .searchImage{
+        margin-left: -0px;
+        margin-top: 200px;
+        width: 80%;
+        height: 80%;
+        overflow-x: hidden;
+    }
+
+    .settingImg{
+        margin-top: 100px;
+
+    }
+    .clickedSearch{
+        margin-bottom: 0px;
+        width: 50%;
+    }
+
+    .sokeResultat{
+        margin-top: 100px;
+        width: 50%;
+    }
+
+    .setting{
+        width: 70%;
+        height: 80%;
+        margin-left: 20px;
+        margin-top: 450px;
+    }
+
+    .settingImg{
+        margin-left: 50px;
+        margin-top: 250px;
+        width: 65%;
+    }
+
+    .colorBlindImg{
+        margin-top: 50px;
+        margin-left: 40px;
+        width: 60%;
+    }
+
+    .darkModeImg{
+        width: 70%;
+        margin-right: 0px;
+        width: 100%;
+    }
+
+}
+
+
+
+
+

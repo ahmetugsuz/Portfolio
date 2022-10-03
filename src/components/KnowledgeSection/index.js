@@ -43,7 +43,7 @@ function Knowledge() {
   }
 
   const variantsMiddleImageRight = {
-    open: {x: -250, y: 300, scale: 1.2, opacity: 1 },
+    open: {x: -250, y: 350, scale: 1.2, opacity: 1 },
     closed: {x: 0, y: 350, scale: 0.5, opacity: 0 }
   }
 
@@ -53,7 +53,7 @@ function Knowledge() {
   }
 
   const variantsRightText = {
-    open: {x: -400, y: -550, scale: 1.4, opacity: 1 },
+    open: {x: -400, y: -600, scale: 1.4, opacity: 1 },
     closed: {x: 0, y: -550, scale: 0, opacity: 0 }
   }
 
@@ -67,7 +67,7 @@ function Knowledge() {
   }
 
   const variantsRightTextRight = {
-    open: {x: 300, y: -300, scale: 1.4, opacity: 1 },
+    open: {x: 350, y: -400, scale: 1.4, opacity: 1 },
     closed: {x: 0, y: -300, scale: 0, opacity: 0 }
   }
 
@@ -100,27 +100,30 @@ function Knowledge() {
             <motion.img className='languageBilde' src={backend} 
             onHoverStart={() => setIsOpenMiddle(OpenMiddle => !OpenMiddle)} onHoverEnd={() => setIsOpenMiddle(OpenMiddle => !OpenMiddle)}/>
             <motion.p transition={{duration: 0.2, type: "tween"}} animate={isOpenMiddle ? "open" : "closed"}
-             variants={variantsMiddleLeft} className='middleInfoTekst'>With the fundemental understanding of logic in back-end development, I am now capable of jumping into several languages without any problem.  </motion.p>
+             variants={variantsMiddleLeft} className='middleInfoTekst middleTekst2'>With the fundemental understanding of logic in back-end development, I am now capable of jumping into several languages without any problem.  </motion.p>
             <motion.p transition={{duration: 0.2, type: "tween"}} animate={isOpenMiddle ? "open" : "closed"}
-             variants={variantsMiddleRight} className='middleInfoTekst'> With 5 + years of experience on backend side, I've been in several projects. 
-              One them was built on C where multiple devices could communicate with each other on a UDP client(s)-server connection,
-              and i've also created an algorithm built on Java to find the path in a maze from point A to B visualized on GUI. </motion.p>
+             variants={variantsMiddleRight} className='middleInfoTekst'> With 5 years of experience on the backend side, I've worked on several projects. 
+              One of them was built on C where multiple devices would communicate with each other on a UDP client(s)-server connection,
+              and i've also created an algorithm built on Java, to find the quickest path in a maze from point A to B, visualized on GUI. </motion.p>
             <motion.img transition={{duration: 0.2, type: "tween"}}
-             animate={isOpenMiddle ? "open" : "closed"} variants={variantsMiddleImageRight} className='venstreBilde' src={middleRightImage} />
+             animate={isOpenMiddle ? "open" : "closed"} variants={variantsMiddleImageRight} className='venstreBilde middleBilde' src={middleRightImage} />
             <motion.img transition={{duration: 0.2, type: "tween"}}
-             animate={isOpenMiddle ? "open" : "closed"} variants={variantsMiddleImageLeft} className='venstreBilde2' src={middleLeftImage} />
+             animate={isOpenMiddle ? "open" : "closed"} variants={variantsMiddleImageLeft} className='venstreBilde2 middleBilde2' src={middleLeftImage} />
           </motion.div>
           
-          <motion.div whileHover={{ scale: 1.2 }}>
+          <motion.div whileHover={{ scale: 1.2 }} className="toolsContainer">
             <motion.img className='languageBilde' src={tools}
              onHoverStart={() => setIsOpenRight(isOpenRight => !isOpenRight)} onHoverEnd={() => setIsOpenRight(isOpenRight => !isOpenRight)}/>
-            <motion.p transition={{duration: 0.2, type: "tween"}} animate={isOpenRight ? "open" : "closed"} variants={variantsRightText} className='venstreInfoTekst'>I love working on multiple platforms, trying out new software, application to solve complex mathematical equations, analyze data, graph the data, interact with multiple tools and platforms, and make my own testing such as JUnit testing to devolop a robust program.  </motion.p>
+            <motion.p transition={{duration: 0.2, type: "tween"}} animate={isOpenRight ? "open" : "closed"} variants={variantsRightText} className='venstreInfoTekst hoyreInfoTekst'>I love working on multiple platforms,
+             trying out new software, as well as applications to solve complex mathematical equations. Furthermore, I analyze data, graph the data, and interact on multiple tools and platforms. 
+             I also make my own testing, such as Junit, in order to develop robust programs. </motion.p>
             <motion.img transition={{duration: 0.2, type: "tween"}}
-             animate={isOpenRight ? "open" : "closed"} variants={variantsRightImageRight} className='venstreBilde' src={RightImageLeft}/>
+             animate={isOpenRight ? "open" : "closed"} variants={variantsRightImageRight} className='venstreBilde hoyreBilde' src={RightImageLeft}/>
             <motion.img transition={{duration: 0.2, type: "tween"}} 
-            animate={isOpenRight ? "open" : "closed"} variants={variantsRightImageLeft} className='venstreBilde2' src={RightImageRight}/>
+            animate={isOpenRight ? "open" : "closed"} variants={variantsRightImageLeft} className='venstreBilde2 hoyreBilde2' src={RightImageRight}/>
             <motion.p transition={{duration: 0.2, type: "tween"}}
-             animate={isOpenRight ? "open" : "closed"} variants={variantsRightTextRight} className='venstreInfoTekstRight'>I've been working with these tools for many years, and ready to deploy every project in safe hands. Working up from the planning the idea, visualization of the project, time estimate of how long it will take, and program it. I am also open to communicate on many platforms.   </motion.p>
+             animate={isOpenRight ? "open" : "closed"} variants={variantsRightTextRight} className='venstreInfoTekstRight hoyreInfoTekst2'>
+             Every part of the process, from planning the idea, visualizing the end-result of the project, to the programming itself, i try to approach with precision.  </motion.p>
           </motion.div>
         </div>
       </div>
