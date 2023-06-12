@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import './Hero.css';
-import {HeroContainer, HeroBg, VideoBg, HeroContent, 
+import {HeroContainer, HeroBg, ImageBg, HeroContent, 
 HeroH1, HeroP, HeroBtnWrapper, ArrowDown, TextBox} from './HeroElements';
-import Video from '../../videos/video.mp4';
+import BackgroundImage from '../../images/Bg5.jpg';
 import linkedIn from '../../images/linkedInBlackWhite.webp';
 import github from '../../images/gitWhite.png';
 import {Button} from '../ButtonElement';
@@ -12,7 +12,7 @@ import TypeWriter from 'typewriter-effect';
 function Hero() {
   const[hover, setHover] = useState(false);
 
-  const tekst = "Hi, Thanks so much for stopping by!\n My name is Ahmet. Im a 2000´s kid whos always been in love with computers. Through this website you´ll get to know all about me and my areas of expertise, in the field of computer science. Happy scrolling!"
+  const tekst = "Hi, Thanks so much for stopping by!\n My name is Ahmet, and through this website you´ll get to know all about me and my areas of expertise, in the field of computer science. Happy scrolling!"
 
   const onHover = () =>{
     setHover(!hover);
@@ -20,15 +20,15 @@ function Hero() {
   return (
     <HeroContainer>
         <HeroBg className='HeroBg'>
-            <VideoBg className='VideoBg' autoPlay loop muted playsinline src={Video} type='video/mp4' id="video-background" poster="images/poster.jpg"/>
+            <img className='ImageBg' resizeMode="cover" src={BackgroundImage} type='image/jpeg' id="image-background"/>
         </HeroBg>
         <div className='heroSocials'>
-        <a href={"https://www.linkedin.com/in/ahmet-tugsuz-7b6240210/"} target="_blank">
-          <img src={linkedIn} className="linkedinV2"/>
-        </a>
-        <a href='https://github.com/ahmetugsuz' target="_blank">
-          <img src={github} className="githubV2"/>
-        </a>
+          <a href={"https://www.linkedin.com/in/ahmet-tugsuz-7b6240210/"} target="_blank">
+            <img src={linkedIn} className="linkedinV2"/>
+          </a>
+          <a href='https://github.com/ahmetugsuz' target="_blank">
+            <img src={github} className="githubV2"/>
+          </a>
         </div>
         <div className='helloWorld'>
 

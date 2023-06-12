@@ -14,7 +14,7 @@ function Social() {
                 </div>
                 <div className='footerThisWebsite'>
                     <p className='overtekst createdBy'>This website was created by me @</p>
-                    <p className='overLinjaTekst createdBy createdV2'> // React.js &nbsp; &nbsp; HTML &nbsp; &nbsp; CSS &nbsp; &nbsp; Draw.io </p>
+                    <p className='overLinjaTekst createdBy createdV2'> @ Copyright 2023. Made by Ahmet Tugsuz </p>
                 </div>
                 <div className='footerSocial'>
                     <h2 className='overLinjaTekst V3'>Some Socials</h2>

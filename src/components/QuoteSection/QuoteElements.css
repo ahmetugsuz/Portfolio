@@ -2,7 +2,6 @@
 
 .quoteContainer{
     justify-content: center;
-
     padding: 100px;
     background-color: #00FFFF;
     margin: auto;
@@ -12,18 +11,22 @@
 }
 
 .quote{
-    color: rgb(133, 128, 128);
-    font-family:fantasy;
+    color: #555;
+    font-family:sans-serif;
     font-weight: 100;
     letter-spacing: 1.2px;
 }
 
 .Alan{
-    color: rgb(133, 128, 128);
-    font-weight: 100;
+    padding-top: 0.5rem;
+    color: #666;
+    font-weight: 600;
+    font-family: fantasy;
 }
 
 @media screen and (max-height: 700px){
+
+
     .quote{
         font-size: 11px;
     }
@@ -31,11 +34,11 @@
         font-size: 11px;
     }
 }
-@media screen and (max-height: 900px){
+@media screen and (max-height: 968px) and (min-height: 700px){
     .quote{
-        font-size: 13px;
+        font-size: 26px;
     }
     .Alan{
-        font-size: 13px;
+        font-size: 17px;
     }
 }

@@ -1,11 +1,8 @@
 
-
-
 .footer_Container{
     height: 100%;
     width: 100%;
     background-color: black;
-
 }
 
 .rowbox_container_social{
@@ -25,6 +22,7 @@
 
 .left_side_social{
     width: 34%;
+
 }
 .middle_side_social{
     width: 33%;
@@ -32,34 +30,56 @@
 .right_side_social{
     width: 33%;
 }
-
+.leftsideInfoHeadline{
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    color: white;
+}
 
 .leftSideInfo{
     color: white;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
+    padding-left: 2.7rem;
     padding-top: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+
 
 }
 
 .middleSideInfo{
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
-    padding-top: 1rem;
+    margin-top: -1.7rem;
+    letter-spacing: 0.1rem;
+}
+.createdV2{
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
+    letter-spacing: 5px;
+    word-spacing: 0px;
+    padding-top: 3.2rem;
 
 }
 
 .rightSideInfo{
     color: white;
-    padding: 0.6rem;
-    width: 4rem;
+    padding: 0.45rem 0.6rem;
+    width: 3.5rem;
+}
+.linkedinDesign{
+
+}
+.githubDesign{
+    padding-bottom: 10px;
+    
 }
 
 .social_h2{
     width: 100%;
+    padding-top: 17px;
+    padding-left: 4.6rem;
+    font-size: 1.5rem;
 }
 
 .leftSideContainer{
@@ -73,13 +93,14 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 50%;
+    height: 30%;
+    margin-top: 3rem;
 }
 
 .rightSideContainer{
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 90%;
     height: 60%;
 }
 
@@ -87,16 +108,13 @@
     .footer_Container{
         position: relative;
         height: 20%;
-        height: 20rem;
-        background-color: red;
-        border: solid red 3px;
     }
 
 
 
 }
 
-@media screen and (max-height: 968px) {
+@media screen and (max-height: 1000px) {
     .rowbox_container_social{
         height: 30vh;
     }
@@ -110,6 +128,10 @@
     .right_side_social{
         width: 25%;
     }
+
+    .social_h2{
+        padding-left: 2.5rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -119,10 +141,8 @@
     }
 
     .leftSideInfo{
-
         padding-top: 1rem;
         font-size: 0.9rem;
-    
     }
     
     .middleSideInfo{
@@ -138,8 +158,10 @@
         padding-top: 2rem;
         width: 40%;
     }
+    
+}
 
-
-
+@media screen and (max-width: 1300px) {
+    
 }
 

@@ -6,7 +6,6 @@ import bilde from '../../images/mitt-bilde.png';
 import languages from '../../images/languages.png'; 
 import goals from '../../images/goals2.png'; 
 import TypeWriter from 'typewriter-effect';
-import { AboutWrapper } from '../AboutSection2/AboutElements';
 import Soknad from './Søknad.pdf';
 import CV from './CV.pdf';
 
@@ -42,11 +41,11 @@ function About({ headline, headline2, headline3, id }) {
           <div className='bildeHolder'>
             <img src={bilde} className="b"></img>
           </div>
-          <a href={Soknad} target="_blank" rel="noopener noreferrer">
-            <button className='button'>Søknad</button>
-          </a>
           <a href={CV} target="_blank" rel="noopener noreferrer">
             <button className='button'>CV</button>
+          </a>
+          <a href={CV} target="_blank" rel="noopener noreferrer">
+            <button className='skillsButton'>Skills</button>
           </a>
 
       </div>

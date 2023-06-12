@@ -43,7 +43,7 @@ export const HeroBg = styled.div`
     overflow: hidden;
 `;
 
-export const VideoBg = styled.video`
+export const ImageBg = styled.image`
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -70,6 +70,9 @@ export const HeroH1 = styled.h1`
 
     
 
+    @media screen and (max-width: 1300px) {
+        font-size: 45px;
+    }
     @media screen and (max-width: 768px) {
         font-size: 40px;
     }
@@ -88,6 +91,11 @@ export const HeroP = styled.p`
     max-width: 600px;
 
 
+
+    @media screen and (max-width: 1300px) {
+        font-size: 20px;
+    }
+    
     @media screen and (max-width: 768px) {
         font-size: 24px;
     }

@@ -1,0 +1,376 @@
+
+.html{
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.body{
+    font-family: sans-serif;
+}
+
+
+.aboutMecontainer{
+    /*background-image: url("../../images/ProgImg/Kotlin_Icon.svg.png");
+    background-color: rgba(237,239,244,255);
+    background-image: url("../../images/ProgImg/Kotlin_Icon.svg.png");
+    background-blend-mode:color;
+    background-position-x: right;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(237,239,244,255);
+}
+
+.aboutMeTextBoxcontainer{
+    background-color: #fff;
+    width: 70%;
+    height: 70%;
+    margin-top: -70px;
+    max-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -30px 30px 10px rgba(0, 0, 0, 0.4);
+}
+
+.aboutMeTextBox{
+    width: 90%;
+    height: 80%;
+    position: relative;
+}
+
+.aboutTopline{
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+}
+.aboutToplineP1{
+    font-size: 1.2rem;
+    color: blueviolet;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    font-family:inherit;
+
+}
+
+.headlineCont{
+    position: relative; 
+    justify-content: center;
+    display: block;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+.aboutMeHeadline{
+    font-size: 2.4rem;
+    letter-spacing: 0.05rem;    
+}
+
+
+.rettStrekAbout{
+    position: relative;
+    margin-bottom: 5px;
+    width: 10%;
+    display: inline-table;
+    border: solid #444 1px;
+}
+
+.aboutMeInfo{
+    text-align: center;
+    padding-top: 10px;
+    color: #555;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 100;
+    max-width: 35rem;
+    margin: auto;
+    line-height: 1.2;
+    
+}
+
+.splitAbout{
+    height: 100%;
+}
+
+.left{
+    float:left;
+    height:100%;
+    width: 60%;
+    margin:0;
+    bottom: 0;
+
+}
+
+.right {
+    float:right;
+    height:100%;
+    width: 45%;
+    margin:0;
+}
+
+.centered {
+    height: 100%;
+    width: 90%;
+    padding: 25px;
+}
+
+.OmMeg{
+    position: absolute;
+    width: 45%;
+    height: 50%;
+    bottom: 0;
+    top: 40%;
+    padding: 10px;
+
+}
+
+.toplineAbout{
+    font-size: 1.5rem;
+    letter-spacing: 1.4px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    margin-top: -10px;
+
+}
+
+.descriptionContainerAbout{
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.descriptionAbout{
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    word-spacing: 0.02rem;
+    max-width: 80rem;
+    color: #666;
+    /*font-family: sans-serif;*/
+
+
+}
+
+.softSkillsContainer{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    bottom: 0;
+    margin: 0;
+    top: 40%;
+
+}
+
+.skillsTopLineAbout{
+    font-size: 1.5rem;
+    letter-spacing: 1.4px;
+    font-weight: 600;
+}
+
+.softSkills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+
+}
+
+
+.skill{
+    border: solid 1px rgb(231, 231, 227);
+    background-color: rgb(231, 231, 227);
+    padding: 10px;
+    padding-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    max-height: 40px;
+    width: 83%;
+    border-radius: 5px;
+}
+
+.softSkilltext{
+    top: 0;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-top: -10px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #666 ;
+}
+
+.contactBtn{
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    color: #666;
+    background-color: #fff;
+    border: solid white 0px;
+    margin-top: 15px;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.2s;
+}
+.contactBtn:hover{
+    transform: translateY(3px);
+    transition: 0.2s;
+    color: blueviolet;
+}
+.knappPeker{
+}
+
+.buttonToContactContainer{
+    
+}
+
+
+@media screen and (max-height: 1200px) {
+    .aboutMeTextBoxcontainer{
+        width: 82%;
+    }
+    
+}
+
+@media screen and (min-width: 1800px) {
+    .aboutMeTextBoxcontainer{
+        height: 65%;
+    }
+}
+
+@media (max-height: 1000px){ 
+
+    .aboutMeTextBoxcontainer{
+        width: 85%;
+        height: 85%;
+    }
+
+    .aboutToplineP1{
+        font-size: 1.1rem;
+    }
+
+    .aboutMeHeadline{
+        font-size: 1.8rem;
+    }
+
+    .aboutMeInfo{
+        font-size: 0.9rem;
+    }
+
+    .OmMeg{
+        top: 30%;
+    }
+
+    .softSkillsContainer{
+        top: 30%;
+    }
+
+    .toplineAbout{
+        font-size: 1.2rem;
+    }
+
+    .descriptionAbout{
+        font-size: 0.85rem;
+        line-height: 1rem;
+    }
+
+    .skillsTopLineAbout{
+        font-size: 1.2rem;
+    }
+
+    .softSkilltext{
+        font-size: 0.75rem;
+    }
+    
+}
+
+@media screen and (max-width: 1400px) {
+    .aboutToplineP1{
+        font-size: 1rem;
+    }
+
+    .aboutMeHeadline{
+        font-size: 1.8rem;
+    }
+
+    .aboutMeInfo{
+        font-size: 0.9rem;
+    }
+
+    .OmMeg{
+        top: 30%;
+    }
+
+    .softSkillsContainer{
+        top: 30%;
+    }
+
+    .toplineAbout{
+        font-size: 1.2rem;
+    }
+
+    .descriptionAbout{
+        font-size: 0.7rem;
+    }
+
+    .skillsTopLineAbout{
+        font-size: 1.2rem;
+    }
+
+    .softSkilltext{
+        font-size: 0.75rem;
+    }
+
+    .skill{
+        width: 89%;
+        padding-bottom: 5px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .aboutToplineP1{
+        font-size: 0.9rem;
+    }
+
+    .aboutMeHeadline{
+        font-size: 1.5rem;
+    }
+
+    .aboutMeInfo{
+        font-size: 0.7rem;
+    }
+
+    .OmMeg{
+        top: 30%;
+    }
+
+    .softSkillsContainer{
+        top: 30%;
+    }
+
+    .toplineAbout{
+        font-size: 1rem;
+    }
+
+    .descriptionAbout{
+        font-size: 0.5rem;
+    }
+
+    .skillsTopLineAbout{
+        font-size: 1rem;
+    }
+
+    .softSkilltext{
+        font-size: 0.5rem;
+    }
+
+    .skill{
+        width: 86%;
+        padding-bottom: 5px;
+        justify-content: center;
+        text-align: center;
+    }
+}

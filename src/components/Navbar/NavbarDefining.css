@@ -1,0 +1,4 @@
+.navMenuLinks:hover{
+    color: aqua;
+    transition: 0.3s;
+}

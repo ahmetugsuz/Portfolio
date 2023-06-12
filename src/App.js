@@ -1,20 +1,20 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Home from './pages';
 import Hero from './components/HeroSection';
-import AboutSection from './components/AboutSection2';
-import { homeObjOne, homeObjTwo } from './components/AboutSection2/Data';
-import { homeObjAbout, homeObjQuote } from './components/AboutSection/Data';
+import { homeObjAbout, homeObjQuote } from './components/AboutMe/Data';
 import About from './components/AboutSection';
 import Quote from './components/QuoteSection';
 import Knowledge from './components/KnowledgeSection';
-import Project from './components/ProjectSection';
+import ProjectOslo from './components/ProjectSection';
 import Contact from './components/Contact.js';
 import Social from './components/Social';
 import Contact_test from './components/Contact_test';
 import Social_test from './components/Social_test';
+import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
 
 
 const Image = () => {
@@ -36,13 +36,14 @@ function App() {
   return (
     <>
     <Router>
-      <Home />
-      <About {...homeObjAbout}/>
-      <Quote />
-      <Knowledge />
-      <Project />
-      <Contact_test />
-      <Social_test />
+      <Navbar />
+      <Route exact path="/" component={Hero}/>
+      <Route exact path="/" {...homeObjAbout} component={AboutMe}/> 
+      <Route exact path="/" component={Knowledge} />
+      <Route exact path="/" component={Projects}/>   
+      <Route exact path="/" component={Contact_test}/>
+      <Route exact path="/" component={Social_test} />
+      <Route path="/projectOslo" component={ProjectOslo}/>
     </Router>
 
     

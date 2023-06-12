@@ -26,7 +26,7 @@ function Contact_test() {
 
     return (
         <div className='Contact_Container' id='contact'>
-            <div className='rowbox_container'>
+            <div className='rowbox_container' >
                 <div className='columnBox_contact left_side'>
                     <div className='bildeContainer_contact'>
                         <img src={bildeAvMeg} className="bildeAvMeg_contact" />

@@ -43,6 +43,7 @@ export const NavLogo = styled(LinkR)`
     margin-left: 0px;
     font-weight: bold;
     text-decoration: none;
+    transition: 0.25s;
 `;
 
 
@@ -88,7 +89,7 @@ export const NavLinks = styled(LinkS)`
     height: 100%;
     cursor: pointer;
     font-size: 20px;
-
+    transition: 0.25s;
     &.active {
         border-bottom: 3px solid #00FFFF;
     }

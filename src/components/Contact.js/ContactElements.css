@@ -7,12 +7,6 @@
     
 }
 
-@media screen and (min-width: 1800px) {
-    .contactContainer{
-        height: 70vh;
-    }
-
-}
 
 .inputContainer{
     display: grid;
@@ -135,14 +129,7 @@
     padding: 15px;
 }
 
-.createdV2{
-    padding-right: 3.5rem;
-    padding-left: 3.5rem;
-    letter-spacing: 5px;
-    margin-left: -25px;
 
-    
-}
 
 .goodbye{
     font-family: fantasy;
@@ -227,7 +214,7 @@
         position: absolute;
         left: 0;
         margin-left: -100px;
-        width: 19rem;
+        width: 20rem;
         mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 60%, transparent 100%);
     }
     .bildeAvMeg{
@@ -471,4 +458,13 @@
         margin-top: 150px;
         margin-left: 30px;
     }
+}
+
+@media screen and (min-width: 1600px) {
+    .contactContainer{
+        height: 70vh;
+        margin-top: 500px;
+        border: solid green 2px;
+    }
+
 }

@@ -3,7 +3,7 @@ import {FaBars} from 'react-icons/fa';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, 
 NavMenu, NavItem, NavLinks} from './NavbarElements';
 import {animateScroll as scroll} from 'react-scroll';
-
+import './NavbarDefining.css'
 function Navbar({ toggle }) {
     const [scrollNav, setScrollNav] = useState(false)
 
@@ -26,7 +26,7 @@ function Navbar({ toggle }) {
     <>
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
-                <NavLogo to="/" onClick={toggleHome}>
+                <NavLogo className='navMenuLinks' to="/" onClick={toggleHome}>
                     ahmettu
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
@@ -34,24 +34,24 @@ function Navbar({ toggle }) {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to="about"
+                        <NavLinks className='navMenuLinks' to="about"
                         smooth={true} duration={500} spy={true} exact='true'
                         offset={-80}>About</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="skills"
+                        <NavLinks className='navMenuLinks' to="skills"
                         smooth={true} duration={500} spy={true} exact='true'
                         offset={-80}>Skills</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="projects"
+                        <NavLinks className='navMenuLinks' to="projects"
                         smooth={true} duration={500} spy={true} exact='true'
                         offset={-80}>Projects</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="contact"
+                        <NavLinks className='navMenuLinks' to="contact"
                         smooth={true} duration={500} spy={true} exact='true'
-                        offset={-80}>Contact</NavLinks>
+                        offset={-75}>Contact</NavLinks>
                     </NavItem>
                 </NavMenu>
             </NavbarContainer>

@@ -105,7 +105,7 @@ function ProjectsTest() {
 
 
     return (
-        <div className='Projects_test_Container' id='projects'>
+        <div className='Projects_test_Container' id='projectOslo'>
             <div className='rowHolder'>
                 <div className='topline_logo_container'>
                     <h2 className=''>Oslo tourist App</h2>

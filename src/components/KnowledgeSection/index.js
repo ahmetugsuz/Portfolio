@@ -62,7 +62,7 @@ function Knowledge() {
     closed: {x: '-100vw', y: 100, scale: 0.5, opacity: 0 }
   }
   const variantsRightImageRight = {
-    open: {x: -450, y: -0, scale: 1, opacity: 1 },
+    open: {x: -380, y: -0, scale: 1, opacity: 1 },
     closed: {x: '-00vw', y: -0, scale: 0.5, opacity: 0 }
   }
 
@@ -103,8 +103,8 @@ function Knowledge() {
              variants={variantsMiddleLeft} className='middleInfoTekst middleTekst2'>With the fundemental understanding of logic in back-end development, I am now capable of jumping into several languages without any problem.  </motion.p>
             <motion.p transition={{duration: 0.2, type: "tween"}} animate={isOpenMiddle ? "open" : "closed"}
              variants={variantsMiddleRight} className='middleInfoTekst'> With 5 years of experience on the backend side, I've worked on several projects. 
-              One of them was built on C where multiple devices would communicate with each other on a UDP client(s)-server connection,
-              and i've also created an algorithm built on Java, to find the quickest path in a maze from point A to B, visualized on GUI. </motion.p>
+             One of them was built on C a UDP Client-Server connection, or a Web-scraper on python to read information about NBA players from wikipedia to make statistics out of it, I've also created maze solver algorithm on Java, and much more.
+               </motion.p>
             <motion.img transition={{duration: 0.2, type: "tween"}}
              animate={isOpenMiddle ? "open" : "closed"} variants={variantsMiddleImageRight} className='venstreBilde middleBilde' src={middleRightImage} />
             <motion.img transition={{duration: 0.2, type: "tween"}}
