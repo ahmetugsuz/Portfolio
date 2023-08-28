@@ -73,9 +73,15 @@
 .rettStrekAbout{
     position: relative;
     margin-bottom: 5px;
-    width: 10%;
-    display: inline-table;
-    border: solid #444 1px;
+    width: 0.5rem;
+    display: inline-block;
+    border: solid #444 0.0207in;
+    transition: border-width 0.4s ease-out, width 0.5s ease-out; /* Overgang for bredde og grenselinjens tykkelse */
+}
+
+.rettStrekAbout.animate {
+    width: 7.5rem; /* Angi ønsket bredde */
+    border-width: 0.0207in; /* Øk grenselinjens tykkelse */
 }
 
 .aboutMeInfo{
@@ -107,7 +113,7 @@
 .right {
     float:right;
     height:100%;
-    width: 45%;
+    width: 40%;
     margin:0;
 }
 
@@ -119,12 +125,11 @@
 
 .OmMeg{
     position: absolute;
-    width: 45%;
+    width: 50%;
     height: 50%;
     bottom: 0;
     top: 40%;
     padding: 10px;
-
 }
 
 .toplineAbout{
@@ -142,13 +147,12 @@
 }
 .descriptionAbout{
     padding-bottom: 20px;
-    font-size: 1.1rem;
-    letter-spacing: 1.5px;
-    word-spacing: 0.02rem;
-    max-width: 80rem;
+    font-size: calc(0.50vh + 0.50vw);/*1.1rem;*/
+    letter-spacing: calc(0.05vh + 0.05vw);/*1.5px;*/
+    word-spacing: calc(0.02vh + 0.02vw);/*0.02rem;*/
+    max-width: calc(60vh + 80vw);/*80rem;*/
     color: #666;
     /*font-family: sans-serif;*/
-
 
 }
 
@@ -181,9 +185,9 @@
     padding: 10px;
     padding-top: 20px;
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 20px;
-    max-height: 40px;
+    /*max-height: 50px;*/
     width: 83%;
     border-radius: 5px;
 }
@@ -194,12 +198,14 @@
     text-align: center;
     justify-content: center;
     padding-bottom: 10px;
-    margin-top: -10px;
+    padding: 1px;
+    margin-top: -12px;
     font-family: sans-serif;
     font-weight: 600;
     color: #666 ;
+    font-size: calc(0.45vh + 0.45vw);
 }
-
+/*
 .contactBtn{
     letter-spacing: 0.1rem;
     font-weight: 600;
@@ -208,21 +214,25 @@
     border: solid white 0px;
     margin-top: 15px;
     padding: 0.5rem 0.5rem;
-    font-size: 1.2rem;
+    font-size: 0.1rem;
     border-radius: 1rem;
     font-family: 'Times New Roman', Times, serif;
     transition: 0.2s;
 }
+
+
 .contactBtn:hover{
     transform: translateY(3px);
     transition: 0.2s;
     color: blueviolet;
 }
+
 .knappPeker{
 }
-
+*/
 .buttonToContactContainer{
-    
+    position: relative;
+    font-size: calc(0.5vh + 0.5vw);
 }
 
 
@@ -243,7 +253,7 @@
 
     .aboutMeTextBoxcontainer{
         width: 85%;
-        height: 85%;
+        height: 92%;
     }
 
     .aboutToplineP1{
@@ -255,7 +265,7 @@
     }
 
     .aboutMeInfo{
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 
     .OmMeg{
@@ -270,18 +280,24 @@
         font-size: 1.2rem;
     }
 
-    .descriptionAbout{
-        font-size: 0.85rem;
-        line-height: 1rem;
-    }
 
     .skillsTopLineAbout{
         font-size: 1.2rem;
     }
 
-    .softSkilltext{
-        font-size: 0.75rem;
+    .descriptionAbout{
+        font-size: calc(0.6vh + 0.62vw);
     }
+
+    .buttonToContactContainer{
+        font-size: calc(0.6vh + 0.6vw);
+    }
+
+    /*
+    .softSkilltext{
+        font-size: 0.8rem;
+    }
+    */
     
 }
 
@@ -311,22 +327,21 @@
     }
 
     .descriptionAbout{
-        font-size: 0.7rem;
+        /*font-size: calc(0.6vh + 0.6vw);*/
     }
 
     .skillsTopLineAbout{
         font-size: 1.2rem;
     }
-
+    /*
     .softSkilltext{
         font-size: 0.75rem;
     }
+    */
 
     .skill{
         width: 89%;
         padding-bottom: 5px;
-        justify-content: center;
-        text-align: center;
     }
 }
 
@@ -349,6 +364,11 @@
 
     .softSkillsContainer{
         top: 30%;
+
+    }
+
+    .softSkills{
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .toplineAbout{
@@ -356,21 +376,26 @@
     }
 
     .descriptionAbout{
-        font-size: 0.5rem;
+        /*font-size: calc(0.vh + 0.9vw);*/
     }
 
     .skillsTopLineAbout{
         font-size: 1rem;
     }
-
+    /*
     .softSkilltext{
         font-size: 0.5rem;
     }
+    */
 
     .skill{
         width: 86%;
-        padding-bottom: 5px;
-        justify-content: center;
-        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .softSkills{
+        grid-template-columns: repeat(1, 1fr);
     }
 }

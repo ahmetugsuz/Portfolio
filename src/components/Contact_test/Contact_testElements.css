@@ -1,4 +1,4 @@
-
+e
 * {
     box-sizing: border-box;
 }
@@ -62,12 +62,12 @@
 .topline_contact{
     color: aqua;
     font-family: fantasy;
-    font-size: 1.2rem;
+    font-size: calc(0.7vh + 0.7vw);
     line-height: 1.6;
 }
 
 .heading_contact{
-    font-size: 2.2rem;
+    font-size: calc(3.3vmin);
     letter-spacing: 0.1rem;
     
 }
@@ -85,10 +85,11 @@
 
 .innholdOverdel_contact{
     font-family: 'Courier New', Courier, monospace;
-    font-size: large;
+    font-size: calc(0.7vw + 0.8vh);
     position: relative;
     width: 100%;
     display: flex;
+    min-height: 6.6%;
     
 }
 
@@ -100,7 +101,7 @@
 }
 
 .Contact_headline2{
-    font-size: 1.5rem;
+    font-size: calc(0.8vw + 0.8vh); /*font-size: 1.5rem;*/
     align-self: flex-end;
     padding-left: 3rem;
     padding-bottom: 0.3rem;
@@ -167,9 +168,11 @@
         max-width: 65%;
     }
 
+    /*
     .innholdOverdel_contact{
         font-size: large;
     }
+    */
 
     .meldingContainer_contact{
         margin-top: 30px;
@@ -185,19 +188,21 @@
     .right_side{
         width: 60%;
     }
-
+    /*
     .topline_contact{
         padding-top: 5px;
         font-size: 0.9rem;
     }
+    */
 
     .heading_contact{
-        font-size: 1.8rem;
+        /*font-size: 1.8rem;*/
     }
-
+    /*
     .Contact_headline2{
         font-size: 1.3rem;
     }
+    */
 
     .inputContainer_contact{
         padding-top: 0rem;
@@ -223,22 +228,24 @@
         overflow-x: hidden;
         overflow: hidden;
     }
-
+    /*
     .innholdOverdel_contact{
         font-size: medium;
     }
+    */
 
     .headline_Contact{
         padding-top: 10px;
         padding-bottom: 0.5rem;
     }
-
+    /*
     .Contact_headline2{
         display: flex;
         padding-left: 5px;
         font-size: 1rem;
         padding-top: 1px;
     }
+    */
 
 
     .left_side{

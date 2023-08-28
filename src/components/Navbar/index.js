@@ -41,7 +41,7 @@ function Navbar({ toggle }) {
                     <NavItem>
                         <NavLinks className='navMenuLinks' to="skills"
                         smooth={true} duration={500} spy={true} exact='true'
-                        offset={-80}>Skills</NavLinks>
+                        offset={-80}>Proficiencies</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks className='navMenuLinks' to="projects"

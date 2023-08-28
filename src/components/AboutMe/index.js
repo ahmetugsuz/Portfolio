@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import './AboutElements.css';
 import CV from './CV.pdf';
 import bilde from '../../images/mitt-bilde.png';
-
 import { ButtonContact, ArrowDownContact } from '../ButtonElement';
-
+import ScrollAnimationAbout from '../ScrollAnimationAbout';
 function AboutMe({id, toggle}){
     const[hover, setHover] = useState(false);
+    const experiencesSectionRef = useRef(null);
     const onHover = () =>{
         setHover(!hover);
     }
@@ -19,7 +19,7 @@ function AboutMe({id, toggle}){
             <div className='aboutMeTextBoxcontainer'>
                 <div className='aboutMeTextBox'>
                         <div className='aboutTopline'><p className='aboutToplineP1'>About</p></div>
-                        <div className='headlineCont'><p className='aboutMeHeadline'><div className='rettStrekAbout'></div> Personal Info <div className='rettStrekAbout'></div></p></div>
+                        <div className='headlineCont'><p className='aboutMeHeadline'><ScrollAnimationAbout experiencesSectionRef={experiencesSectionRef} /> Personal Info <ScrollAnimationAbout experiencesSectionRef={experiencesSectionRef} /></p></div>
                         <div className='aboutMeInfo'><p className='infotextAboutMe'>Here you will find more information about me, who I am, and what I do</p></div>
                         <div className='splitAbout left'>
                             <div className='centered'>

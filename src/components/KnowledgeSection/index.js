@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import './KnowledgeElements.css';
 import frontend from '../../images/frontend.png';
 import backend from '../../images/backend.png';
@@ -10,10 +10,12 @@ import middleLeftImage from '../../images/middleLeftImage.png';
 import middleRightImage from '../../images/middleRightImage.png';
 import RightImageRight from '../../images/RightImageRight.png';
 import RightImageLeft from '../../images/RightImageLeft.png';
-import { motion } from 'framer-motion';
+import { motion, transform } from 'framer-motion';
 import { Bounce } from 'react-toastify';
+import ScrollAnimation from '../ScrollAnimation';
 
 function Knowledge() {
+  const experiencesSectionRef = useRef(null);
   const variants = {
     open: { opacity: 1, x: 0, y: 0, scale: 1.4, rotate: [10, 0]},
     closed: { opacity: 0, x: 300, y: 0, scale: 0 },
@@ -79,8 +81,10 @@ function Knowledge() {
   return (
     <div className='KnowledgeContainer' id={'skills'}>
       <div className='upperContainer'>
-        <h1 className='toplineLanguages'>Languages I speak</h1>
 
+        <h1 className='toplineLanguages'>Proficiencies</h1>
+        <div className='headlineContentProficiencies'><p className='proficienciesHeadline'><ScrollAnimation experiencesSectionRef={experiencesSectionRef} /> Language Skills <ScrollAnimation experiencesSectionRef={experiencesSectionRef} /></p></div>
+        <div className='proficienciesSectionInfo'><p className='infotextAboutMe'>Dive into my realm of programming languages and tools. Explore the languages I've mastered and the tools that fuel my creations.</p></div>
         <div className='languages'>
           <div>
           <motion.div  whileHover={{scale: 1.2}} className="frontendContainer">
@@ -102,8 +106,8 @@ function Knowledge() {
             <motion.p transition={{duration: 0.2, type: "tween"}} animate={isOpenMiddle ? "open" : "closed"}
              variants={variantsMiddleLeft} className='middleInfoTekst middleTekst2'>With the fundemental understanding of logic in back-end development, I am now capable of jumping into several languages without any problem.  </motion.p>
             <motion.p transition={{duration: 0.2, type: "tween"}} animate={isOpenMiddle ? "open" : "closed"}
-             variants={variantsMiddleRight} className='middleInfoTekst'> With 5 years of experience on the backend side, I've worked on several projects. 
-             One of them was built on C a UDP Client-Server connection, or a Web-scraper on python to read information about NBA players from wikipedia to make statistics out of it, I've also created maze solver algorithm on Java, and much more.
+             variants={variantsMiddleRight} className='middleInfoTekst'> With 5 years of backend experience, I've contributed to diverse projects.
+              These include building a UDP Client-Server connection in C, a Python web scraper to gather NBA player data from Wikipedia for statistics, crafting a Java maze-solving algorithm, and more.
                </motion.p>
             <motion.img transition={{duration: 0.2, type: "tween"}}
              animate={isOpenMiddle ? "open" : "closed"} variants={variantsMiddleImageRight} className='venstreBilde middleBilde' src={middleRightImage} />
@@ -111,7 +115,7 @@ function Knowledge() {
              animate={isOpenMiddle ? "open" : "closed"} variants={variantsMiddleImageLeft} className='venstreBilde2 middleBilde2' src={middleLeftImage} />
           </motion.div>
           
-          <motion.div whileHover={{ scale: 1.2 }} className="toolsContainer">
+          <motion.div whileHover={{ scale: 1.2}} className="toolsContainer">
             <motion.img className='languageBilde' src={tools}
              onHoverStart={() => setIsOpenRight(isOpenRight => !isOpenRight)} onHoverEnd={() => setIsOpenRight(isOpenRight => !isOpenRight)}/>
             <motion.p transition={{duration: 0.2, type: "tween"}} animate={isOpenRight ? "open" : "closed"} variants={variantsRightText} className='venstreInfoTekst hoyreInfoTekst'>I love working on multiple platforms,
@@ -128,7 +132,14 @@ function Knowledge() {
         </div>
       </div>
       <div className='goalsContainer'>
-        <h1 className='toplineGoals'>Goals & Achivements</h1>
+        <div className='headlineContentProficiencies'><p className='proficienciesHeadline'><ScrollAnimation experiencesSectionRef={experiencesSectionRef} /> Experiences <ScrollAnimation experiencesSectionRef={experiencesSectionRef} /></p></div>
+        <div className='proficienciesSectionInfo'><p className='infotextAboutMe'>Here you will enter my world of experiences, goals, and achievements, where each chapter adds depth to my story. </p></div>
+          <div className='experiencesContainer'>
+            <a href='https://www.fotball.no/dommer/' target='_blank'><div className='experienceBox'  ><p className='experienceText'>Norges Fotballforbund (NFF) | Football Referee | 3 Years (2018 - 2021)</p></div></a>
+            <a href='https://www.instagram.com/royalwedding_events/' target='_blank'><div className='experienceBox'><p className='experienceText'>Royal Wedding & Events | Wedding Coordinator and Event Assistant | 5 Years (2015 - 2020)</p></div></a>
+            <a href='https://malerhjem.no' target='_blank'><div className='experienceBox'><p className='experienceText'>Malerhjem | Web designer and Operations Manager | Over 1 Year (2022 - 2023) </p></div></a>
+            <a href='https://www.technipfmc.com' target='_blank'><div className='experienceBox'><p className='experienceText'>TechnipFMC | Project Engineer Software | (2023 - Ongoing) </p></div></a>
+          </div>
         <img className='goals' src={goals}></img>
       </div>
     </div>

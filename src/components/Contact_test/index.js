@@ -24,6 +24,10 @@ function Contact_test() {
         e.target.reset();
     };
 
+    const buttonStyles = {
+        cursor: 'pointer',
+    };
+
     return (
         <div className='Contact_Container' id='contact'>
             <div className='rowbox_container' >
@@ -51,7 +55,7 @@ function Contact_test() {
                             <label className='overtekst_contact'>Write A Message</label>
                             <textarea className='meldingSection_contact' cols={50} rows={10} placeholder="Message" name="message" />
                             <div className='button_contact'>
-                                <input className='button typ2' type="submit" value="Send" onClick={notify} />
+                                <input className='button typ2' type="submit" value="Send" onClick={notify} style={buttonStyles} />
                             </div>
                             <ToastContainer />
                         </form>

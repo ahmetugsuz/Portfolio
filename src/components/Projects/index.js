@@ -1,4 +1,5 @@
 import './ProjectsElements.css';
+import React, {useState, useRef} from 'react';
 import bildeAvOsloApp from '../../images/osloTuristAppProjectsIntro.png';
 import nbaStatistics from '../../images/NBAStatistics.png';
 import ImageFilteringProgram from '../../images/ImageFilteringImg.png';
@@ -14,11 +15,12 @@ import numpyIcon from '../../images/ProgImg/numpyImg.png';
 import numbaIcon from '../../images/ProgImg/numbaImg.png';
 import pandasIcon from '../../images/ProgImg/pandasImg.png';
 import pypiIcon from '../../images/ProgImg/pypiImg.png';
-
+import ScrollAnimationAbout from '../ScrollAnimationAbout';
 
 import { useHistory } from "react-router-dom";
 function Projects() {
     const history = useHistory();
+    const experiencesSectionRef = useRef(null);
     const handleClick = () =>{
         history.push("/projectOslo")
         window.scrollTo(0, 0);
@@ -39,7 +41,7 @@ function Projects() {
 
             <div className='topLineProjectContainer'>
                 <p className='myProjectsTopLine'>Projects</p>
-                <div className='landscapeContainer'><p><div className='rettStrekAbout'></div> My Workspace <div className='rettStrekAbout'></div></p></div>
+                <div className='landscapeContainer'><p><ScrollAnimationAbout experiencesSectionRef={experiencesSectionRef} /> My Workspace <ScrollAnimationAbout experiencesSectionRef={experiencesSectionRef} /></p></div>
                 <div className='projectsInfo'> <p className='workshopText'>Welcome to my workspace! Here, you'll discover a showcase of my personal projects, as well as collaborative projects I've worked on with others.
                 </p></div>
             </div>
@@ -72,10 +74,9 @@ function Projects() {
                             <img src={AlanImg} className="bildeAvOsloApp" />
                         </div>
                         <div className='infoAboutProject' >
-                            <h3 className='headlineOsloAppInfo'>AlgoBattle</h3>
+                            <p className='headlineOsloAppInfo'>AlgoBattle</p>
                             <p className='infoOmOsloAppenText'>A game designed to teach algorithms in a fun and interactive way. Join us in the thrilling world of algorithms! 
                             Find the elusive green box amongst a sea of others before the algorithm beats you. 
-                            Compete against other players, explore different algorithms, and have fun while learning valuable skills in the field. 
                             Track your progress, aim for the top spot on our leaderboard, and anticipate the enemies next moves by understanding their algorithmic mind, to stay ahead. Get ready for an exciting journey!
                             Click to play the game. </p>
                         </div>
@@ -116,12 +117,11 @@ function Projects() {
                 <div className="projectBox projectFilterImage" onClick={handleClickFilterImageGitHub}>
                     <div className='imageOfProject'>
                         <img src={ImageFilteringProgram} className="bildeAvOsloApp ImageFilteringImg" />
-                    </div>
+                    </div>  
                     <div className='infoAboutProject infoAboutFilterProject' >
                         <h3 className='headlineOsloAppInfo headlineFilterAppInfo'>Image Filtering Package</h3>
-                        <p className='infoOmOsloAppenText'>This Python package allows users to transform an image by applying a sepia for aged, antique appearance or gray, to give it a black and white effect. 
-                         The intensity of the desired effect can be adjusted, and the program offers the ability to scale the image. 
-                         The program implements the filter using customizable options, providing users with control over the final result. Additionally, users can compare the runtime of the program using three implementation options: Numpy, Numba, and Pure Python.
+                        <p className='infoOmOsloAppenText lead'>This Python package allows users to transform an image by applying a sepia for aged, antique appearance or gray, to give it a black and white effect. 
+                         The program implements the filter using customizable options, like the intensity, or the scale of the image, providing users with control over the final result. Additionally, users can compare the runtime of the program using three implementation options: Numpy, Numba, and Pure Python.
                          Click to see more of it on the GitHub page.</p>
                     </div>
                     <div className='rettStrekProjects'></div>

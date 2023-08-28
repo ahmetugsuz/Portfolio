@@ -26,54 +26,36 @@ export const Button = styled(Link)`
 `
 
 export const ButtonContact = styled(Link)`
+    display: flex;
+    align-items: center;
     letter-spacing: 0.1rem;
     font-weight: 600;
     color: #666;
     background-color: #fff;
-
-    margin-top: 15px;
-    padding: 0.5rem 0rem;
-    font-size: 1.2rem;
+    /*padding: 0.5rem 1rem 0.5rem 0.5rem; /* Adjust padding as needed */*/
+    /*font-size: calc(0.5vh + 0.5vw);*/
     border-radius: 1rem;
     font-family: 'Times New Roman', Times, serif;
     transition: 0.2s;
-    display: flex;
     cursor: pointer;
-
-    width:28%;
-
-    &:hover{
-
+    width: fit-content; /* Adjust the width based on content */
+    &:hover {
         transition: 0.2s;
-        transform: translateY(3px);
+        transform: translateY(2px);
         color: blueviolet;
     }
-
-    @media screen and (max-width: 1300px){
-        font-size: 0.9rem;
-    }
-
-    @media (max-height: 1000px){
-        font-size:0.9rem;
-    }
-
-`
+`;
 
 export const ArrowDownContact = styled(MdArrowDownward)`
-    margin-left: 5px;
-    margin-top: 0px;
-    width: 14%;
-    height: 55%;
-
-    @media screen and (min-width: 1800px){
-        width: 12%;
-    }
-
+    margin-left: 7px;
+    margin-top: -0.5px;
+    font-size: calc(0.5vh + 0.5vw); /* Match the font size of the button text */
+    vertical-align: middle;
+    
     @media (max-height: 1000px){
-        width: 10%;
-    }
-    @media (max-height: 768px){
-        width: 8%;
+        font-size: calc(0.6vw + 0.6vh);
+        margin-top: -1px;
     }
 
-`
+
+`;

@@ -10,7 +10,7 @@ function Social_test() {
         <div className='columnBox_social left_side_social'>
           <div className='leftSideContainer'>
           <h2 className='leftsideInfoHeadline'>Contact Me On</h2>
-          <p className='leftSideInfo'>Email: ahmet2009@live.no</p>
+          <p className='leftSideInfo'>Email: <a style={{color: 'rgba(0, 255, 255, 0.781)'}} href='mailto:ahmet2009@live.no'>ahmet2009@live.no</a></p>
           </div>
         </div>
         <div className='columnBox_social middle_side_social'>
