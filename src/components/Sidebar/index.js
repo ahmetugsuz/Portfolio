@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {SidebarContainer, Icon, CloseIcon, SidebarWrapper, 
 SidebarLink, SidebarMenu} from './SidebarElements';
 
+
 function Sidebar({isOpen, toggle}) {
+
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
-        <Icon onCLick={toggle}>
+        <Icon onClick={toggle}>
             <CloseIcon />
         </Icon>  
         <SidebarWrapper>
@@ -13,12 +15,12 @@ function Sidebar({isOpen, toggle}) {
                 <SidebarLink to="about" onClick={toggle}
                 smooth={true} duration={500} spy={true} exact='true'
                 offset={-80}>About Me</SidebarLink>
-                <SidebarLink to="skills" onClick={toggle}
-                smooth={true} duration={500} spy={true} exact='true'
-                offset={-80}>Proficiencies</SidebarLink>
                 <SidebarLink to="projects" onClick={toggle}
                 smooth={true} duration={500} spy={true} exact='true'
                 offset={-80}>My Projects</SidebarLink>
+                <SidebarLink to="skills" onClick={toggle}
+                smooth={true} duration={500} spy={true} exact='true'
+                offset={-80}>Proficiencies</SidebarLink>
                 <SidebarLink to="contact" onClick={toggle}
                 smooth={true} duration={500} spy={true} exact='true'
                 offset={-80}>Contact Me</SidebarLink>
@@ -28,4 +30,4 @@ function Sidebar({isOpen, toggle}) {
   ) 
 }
 
-export default Sidebar
+export default Sidebar;

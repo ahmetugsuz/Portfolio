@@ -9,26 +9,41 @@ body{
     height: 100%;
     width: 100%;
     background-color: rgba(237,239,244,255);
+    overflow: hidden;
 }
 
+
 .projectsBoxContainer{
-    width: 100vw;
+    width: 200vw;
     height: 100%;
     display: flex;
-    padding-top: 12rem;
+    padding-top: calc(5vh + 5vw);
     justify-content: center;
     text-align: center;
+    transition: transform 0.3s ease;
+    scroll-behavior: smooth;
+}
+
+.AllProjectsContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
 }
 
 .BackendContainer{
     padding-top: 0px;
 }
 
-.AllProjectsContainer{
+.backProjects{
+    width: 100%;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+
 }
+
 
 .fullStackTextConatiner{
     height: 10%;
@@ -47,7 +62,7 @@ body{
 }
 
 .strekUnderProjects{
-    border: solid rgb(138, 43, 226) 3px;
+    border: solid rgb(138, 43, 226) calc(0.10vw + 0.11vh);
     border-radius: 30px;
     width: 15%;
     margin: auto;
@@ -55,56 +70,42 @@ body{
 
 .topLineProjectContainer{
     width: 100%;
-    height: 20%;
     position: absolute;
+    margin-top: 100px;
+    display: grid;
+    display-items: center;
+
 }
 
-.myProjectsTopLine{
-    position: absolute;   
-    right: 0;
-    left: 0;
-    margin-top: 10px;
-    font-family: inherit;
-    color: rgb(138, 43, 226);
-    font-size: 1.2rem;
-    letter-spacing: 0.05rem;
-    font-weight: 600;
-    padding-top: 3rem;
-    text-transform: uppercase;
+.firstTwoProjectsConatainer{
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    width: 100vw;
+
 }
 
-.landscapeContainer{
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin-top: 5.5rem;
-    font-size: 2.4rem;
-    letter-spacing: 0.05rem;  
-}
 
 .projectsInfo{
-    margin-top: 9rem;
-    font-family: inherit;
-    color: #555;
-    font-size: calc(0.7vw + 0.7vh);
-    font-weight: 100;
+
+
+    /*
     line-height: 1.2;
-    right: 0;
-    left: 0;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    font-weight: 100;
+    font-size: calc(0.7vw + 0.7vh);
+    color: #555;
+    font-family: inherit;
+    */
 }
 .workshopText{
-    width: 45%;
     text-align: center;
     margin: auto;
 }
 
 
 .projectBox{
-    width: calc(15vw + 20vh); /*25vw*/
+    position: relative;
+    width: calc(14vw + 17vh); /*25vw*/
     height: calc(23vw + 20vh);
     background-color: #fff;
     margin: 150px;
@@ -113,6 +114,10 @@ body{
     display: block;
     cursor: pointer;
     overflow: hidden;
+    color: #444;
+    transition: transform 0.3s ease;
+
+
 }
 
 .projectBox:hover{
@@ -136,6 +141,35 @@ body{
     color: sienna;
 }
 
+.projectHelsinki:hover{
+    color: #4c751a;
+}
+
+
+.scroll-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateX(10%);
+    transition: 0.2s;
+    font-size: 34px;
+    background: none;
+    border: none;
+    outline: none;
+    right: 50px;
+    color: #333; /* Set a color that contrasts well with your background */
+  }
+  
+  .scroll-icon:hover {
+    color: #555; /* Adjust the color on hover for visual feedback */
+  }
+ 
+
+.thirdProject{
+    transition: transform 3.3s ease;
+
+}
+
 .imageOfProject{
     height: 40%;
     padding-top: 20px;
@@ -146,13 +180,40 @@ body{
     width: 80%;
 }
 
+.helsinkiBusVideo {
+    opacity: 0.7;
+    transition: opacity 1s ease-in-out;
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  }
+  
+.busVideo {
+    width: 80%; /* Adjust the width as needed */
+    margin-left: 55px;
+    min-width: 1400px; /* Set a maximum width if necessary */
+    min-height: 600px;
+    max-width: max-content;
+    max-height: max-content;
+}
+  
+  
+.projectBox.hovered .helsinkiBusVideo {
+    opacity: 1;
+}
+  
+
+
 .infoAboutProject{
     height: 50%;
     font-family: inherit;
     padding: 30px;
     padding-top: 32px;
     width: 100%;
-
     text-align: left;
 }
 
@@ -170,15 +231,25 @@ body{
 .rettStrekProjects{
     width: 100%;
     border: solid rgb(237, 234, 234) 1.45px;
-    margin-top: 5px;
+    margin-top: calc(0.45vw + 0.5vh);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: calc(1.5vh + 1.6vw);
 }
 
 .projectLanguages{
-    height: 9%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
     display: flex;
-    padding: calc(1vh + 1vw); /*20px*/
     justify-content: center;
-    align-items: center;
+    margin-bottom: calc(0.3vh + 0.3vw);
+}
+
+.languageLogo{
+    position: absolute;
+    bottom: 0;
 }
 
 .languageBox{
@@ -190,6 +261,7 @@ body{
     background-color: rgb(231, 231, 227);
     color: #666;
     font-size: calc(0.5vh + 0.45vw);
+    font-weight: 300;
 }
 
 .bildeAvOsloApp{
@@ -203,20 +275,16 @@ body{
     height: 95%;
 }
 
-.headlineOsloAppInfo{
+.headlineProjectInfo{
     font-family: inherit;
     font-size: calc(0.7vh + 0.7vw);
     font-weight: 100;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
     padding-left: 10px;
 }
 
-.headlineNBAAppInfo{
-    
-}
-
 .headlineFilterAppInfo{
-    padding-bottom: 3px;
+ 
 }
 
 .infoOmOsloAppenText{
@@ -234,17 +302,10 @@ body{
     width: calc(0.4vw + 0.4vh);
     height: 100%;
     object-fit: contain;
-    margin-right: calc(0.22vh + 0.22vw); /*5px*/
+    margin-right: calc(0.25vh + 0.25vw); /*5px*/
 
 }
 
-.middleIcon{
-    width: 17px;
-}
-
-.biggerIcon{
-    width: 20px;
-}
 
 
 @media screen and (min-width: 1900px) {
@@ -254,24 +315,61 @@ body{
     }
 
     .projectsBoxContainer{
-        width: 93vw;
+        width: 193vw;
         height: 100%;
         display: flex;
-        padding-top: 14rem;
+
     }
     .projectBox{
-        margin: 170px;
+        margin: 160px;
+    }
+
+    .busVideo{
+        min-width: 1350px; /* Set a maximum width if necessary */
+        min-height: 720px;
+        margin-left: 90px;
+
+    }
+
+    .IconContainer{
+        height: 100%;
+        width: calc(0.6vw + 0.6vh);
+
+    
+    }
+
+    .middleIcon{
+        width: calc(0.5vw + 0.4vh);
+    }
+
+
+
+    .projectLanguages{
+        margin-bottom: calc(0.15vh + 0.20vw);
+    }
+
+    .languageBox{
+        padding: 10px calc(0.40vw + 0.40vh); /*9px 17px*/
     }
 
 }
 
 
+@media screen and (max-height: 1400px){
+    .projectBox{
+        margin: 60px;
+        height: calc(23vw + 21vh);
+        width: calc(15vw + 16vh);
+        margin-top: 150px;
 
-@media screen and (max-height: 1000px){
-
-    body{
-        font-size: 0.8rem;
     }
+    
+}
+
+
+@media screen and (max-height: 1000px) {
+
+
 
     .imageOfProject{
         height: 30%;
@@ -285,34 +383,17 @@ body{
         padding-top: 25px;
     }
 
-    .myProjectsTopLine{
-        font-size: 1.1rem;
-    }
 
-    .landscapeContainer{
-        font-size: 1.8rem;
-    }
 
     .workshopText{
-        font-size: 1.2rem;
         margin-top: -10px;
     }
 
-    .projectsInfo{
-        font-size: 0.75rem;
-    }
+
 
     .fullStackText{
         font-size: 1.3rem;
     }
-
-    /*
-    .projectBox{
-        width: 25vw;
-        height: 60vh;
-        margin: 130px;
-    }
-    */
 
 
     .headlineOsloAppInfo{
@@ -320,32 +401,77 @@ body{
         padding-left: 10px;
     }
 
-    .projectLanguages{
-        height: 8%;
-    }
+    .busVideo{
+        min-width: 900px; /* Set a maximum width if necessary */
+        min-height: 600px;
+        margin-top: -50px;
 
-    .languageBox{
-        display: flex;
-        /*padding: calc(0.2vw + 0.2vh) calc(0.4vw + 0.4vh); 5px 10px*/
     }
 
     .middleIcon{
-        width: 15px;
+        width: calc(0.5vw + 0.5vh);
+    }
+    
+    .biggerIcon{
+        width: calc(0.5vw + 0.5vh);
     }
 
-    .biggerIcon{
-        width: 15px;
-    }
+
 }
 
-@media screen and (max-width: 1200px){
 
 
+@media screen and (max-width: 1500px){
+
+    .backProjects{
+        display: block;
+    }
+
+    .firstTwoProjectsConatainer{
+        display: block;
+    }
+
+    .AllProjectsContainer{
+        text-align: center;
+    }
+
+    .projectsBoxContainer{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
     .projectBox{
-        min-width: calc(15vh + 15vw);
-        height: calc(25vw + 27vh);
-        margin: 50px;
-        margin-top: 130px;
+        min-width: calc(13vh + 12vw);
+        height: calc(18vw + 28vh);
+
+        margin: 90px auto;
+    }
+
+    .fullStackTextConatiner{
+        height: 10%;
+        margin-top: -40px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .fullStackText{
+        font-size: calc(0.8vw + 0.8vh); /*1.6rem;*/
+        color: #555;
+        padding-bottom: 10px;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+    }
+
+    .strekUnderProjects{
+        border: solid rgb(138, 43, 226) calc(0.12vw + 0.11vh);
+        border-radius: 30px;
+        width: 4%;
+        margin: auto;
     }
 
     .imageOfProject{
@@ -355,14 +481,26 @@ body{
     .projectLanguages{
 
     }
-    .rettStrekProjects{
-        border: solid white 0px;
+
+    .middleIcon{
+        width: calc(0.4vw + 0.4vh);
     }
+    
+    .biggerIcon{
+        width: calc(0.4vw + 0.4vh);
+    }
+
 
     .languageBox{
-        margin-right: calc(0.15vw + 0.15vh);
+        /*margin-right: calc(0.15vw + 0.15vh);*/
     }
 
+    .busVideo{
+        min-width: 650px; /* Set a maximum width if necessary */
+        min-height: 500px;
+        margin-left: 70px;
+        margin-top: -30px;
 
-    
+    }
 }
+

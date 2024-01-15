@@ -13,34 +13,36 @@ import RightImageLeft from '../../images/RightImageLeft.png';
 import { motion, transform } from 'framer-motion';
 import { Bounce } from 'react-toastify';
 import ScrollAnimation from '../ScrollAnimation';
+import DraggableElement from '../DraggableElements';
 
 function Knowledge() {
   const experiencesSectionRef = useRef(null);
   const variants = {
-    open: { opacity: 1, x: 0, y: 0, scale: 1.4, rotate: [10, 0]},
-    closed: { opacity: 0, x: 300, y: 0, scale: 0 },
+
+    open: { opacity: 1, x: 0, y: 0, scale: 1, rotate: 0 },
+    closed: { opacity: 0, x: 300, y: 0, scale: 0, rotate: 0 },
   }
   const variants2 = {
-    open: { opacity: 1, x: 0, y: 0, scale: 1.4, rotate: 0},
+    open: { opacity: 1, x: 0, y: 0, scale: 1, rotate: 0},
     closed: { opacity: 0, x: -750, y: 0, scale: 0 },
   }
 
   const variantsRight ={
-    open: { opacity: 1, x: 0, y: 0, scale: 1.2},
+    open: { opacity: 1, x: 0, y: 0, scale: 1},
     closed: { opacity: 0, x: '100vw', y: 0, scale: 0}
   }
   const variantsLeft ={
-    open: { opacity: 1, x: 0, y: 0, scale: 1.2},
+    open: { opacity: 1, x: 0, y: 0, scale: 1},
     closed: { opacity: 0, x: '-100vw', y: 0, scale: 0}
   }
 
   const variantsMiddleLeft ={
-    open: {x: -550, y: -200, scale: 1.4, opacity: 1 },
+    open: {x: -530, y: -250, scale: 1, opacity: 1 },
     closed: {x: 0, y: -200, scale: 0, opacity: 0 }
   }
 
   const variantsMiddleRight = {
-    open: {x: 500, y: -500, scale: 1.4, opacity: 1 },
+    open: {x: 500, y: -500, scale: 1, opacity: 1 },
     closed: {x: 0, y: -500, scale: 0, opacity: 0 }
   }
 
@@ -50,12 +52,12 @@ function Knowledge() {
   }
 
   const variantsMiddleImageLeft = {
-    open: {x: -200, y: -200, scale: 1.2, opacity: 1 },
+    open: {x: -200, y: -200, scale: 1, opacity: 1 },
     closed: {x: '-100vw', y: -200, scale: 0.5, opacity: 0 }
   }
 
   const variantsRightText = {
-    open: {x: -400, y: -600, scale: 1.4, opacity: 1 },
+    open: {x: -400, y: -600, scale: 1, opacity: 1 },
     closed: {x: 0, y: -550, scale: 0, opacity: 0 }
   }
 
@@ -69,22 +71,23 @@ function Knowledge() {
   }
 
   const variantsRightTextRight = {
-    open: {x: 350, y: -400, scale: 1.4, opacity: 1 },
+    open: {x: 350, y: -400, scale: 1, opacity: 1 },
     closed: {x: 0, y: -300, scale: 0, opacity: 0 }
   }
-
 
   const [isOpen, setIsOpen] = useState(false)
   const [isOpenMiddle, setIsOpenMiddle] = useState(false)
   const [isOpenRight, setIsOpenRight] = useState(false)
 
+
+
   return (
     <div className='KnowledgeContainer' id={'skills'}>
       <div className='upperContainer'>
 
-        <h1 className='toplineLanguages'>Proficiencies</h1>
-        <div className='headlineContentProficiencies'><p className='proficienciesHeadline'><ScrollAnimation experiencesSectionRef={experiencesSectionRef} /> Language Skills <ScrollAnimation experiencesSectionRef={experiencesSectionRef} /></p></div>
-        <div className='proficienciesSectionInfo'><p className='infotextAboutMe'>Dive into my realm of programming languages and tools. Explore the languages I've mastered and the tools that fuel my creations.</p></div>
+        <p className='toplineAqua'>Proficiencies</p>
+        <div className='headlineContentProficiencies'><h1><ScrollAnimation experiencesSectionRef={experiencesSectionRef} /> Language Skills <ScrollAnimation experiencesSectionRef={experiencesSectionRef} /></h1></div>
+        <div className=''><h3 style={{ color: '#c2c0c0' }}>Dive into my realm of programming languages and tools. Explore the languages I've mastered and the tools that fuel my creations.</h3></div>
         <div className='languages'>
           <div>
           <motion.div  whileHover={{scale: 1.2}} className="frontendContainer">
@@ -132,16 +135,20 @@ function Knowledge() {
         </div>
       </div>
       <div className='goalsContainer'>
-        <div className='headlineContentProficiencies'><p className='proficienciesHeadline'><ScrollAnimation experiencesSectionRef={experiencesSectionRef} /> Experiences <ScrollAnimation experiencesSectionRef={experiencesSectionRef} /></p></div>
-        <div className='proficienciesSectionInfo'><p className='infotextAboutMe'>Here you will enter my world of experiences, goals, and achievements, where each chapter adds depth to my story. </p></div>
+        <div className='headlineContentProficiencies'><h1><ScrollAnimation experiencesSectionRef={experiencesSectionRef} /> Experiences <ScrollAnimation experiencesSectionRef={experiencesSectionRef} /></h1></div>
+        <div className='proficienciesSectionInfo'><h3 style={{ color: '#c2c0c0' }}>Here you will enter my world of experiences, goals, and achievements, where each chapter adds depth to my story. </h3></div>
           <div className='experiencesContainer'>
             <a href='https://www.fotball.no/dommer/' target='_blank'><div className='experienceBox'  ><p className='experienceText'>Norges Fotballforbund (NFF) | Football Referee | 3 Years (2018 - 2021)</p></div></a>
             <a href='https://www.instagram.com/royalwedding_events/' target='_blank'><div className='experienceBox'><p className='experienceText'>Royal Wedding & Events | Wedding Coordinator and Event Assistant | 5 Years (2015 - 2020)</p></div></a>
             <a href='https://malerhjem.no' target='_blank'><div className='experienceBox'><p className='experienceText'>Malerhjem | Web designer and Operations Manager | Over 1 Year (2022 - 2023) </p></div></a>
             <a href='https://www.technipfmc.com' target='_blank'><div className='experienceBox'><p className='experienceText'>TechnipFMC | Project Engineer Software | (2023 - Ongoing) </p></div></a>
           </div>
-        <img className='goals' src={goals}></img>
-      </div>
+        </div>
+        
+
+
+
+        
     </div>
   )
   console.log(isOpen);

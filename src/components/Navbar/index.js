@@ -36,22 +36,22 @@ function Navbar({ toggle }) {
                     <NavItem>
                         <NavLinks className='navMenuLinks' to="about"
                         smooth={true} duration={500} spy={true} exact='true'
-                        offset={-80}>About</NavLinks>
-                    </NavItem>
-                    <NavItem>
-                        <NavLinks className='navMenuLinks' to="skills"
-                        smooth={true} duration={500} spy={true} exact='true'
-                        offset={-80}>Proficiencies</NavLinks>
+                        offset={-70}>About</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks className='navMenuLinks' to="projects"
                         smooth={true} duration={500} spy={true} exact='true'
-                        offset={-80}>Projects</NavLinks>
+                        offset={-60}>Projects</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks className='navMenuLinks' to="skills"
+                        smooth={true} duration={500} spy={true} exact='true'
+                        offset={-50}>Proficiencies</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks className='navMenuLinks' to="contact"
                         smooth={true} duration={500} spy={true} exact='true'
-                        offset={-75}>Contact</NavLinks>
+                        offset={-40}>Contact</NavLinks>
                     </NavItem>
                 </NavMenu>
             </NavbarContainer>

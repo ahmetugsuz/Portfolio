@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {Link} from 'react-scroll';
 import {MdArrowDownward, MdArrowDropUp} from 'react-icons/md';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 export const Button = styled(Link)`
     border-radius: 50px;
@@ -41,7 +42,7 @@ export const ButtonContact = styled(Link)`
     width: fit-content; /* Adjust the width based on content */
     &:hover {
         transition: 0.2s;
-        transform: translateY(2px);
+        transform: translateY(3px);
         color: blueviolet;
     }
 `;
@@ -49,13 +50,23 @@ export const ButtonContact = styled(Link)`
 export const ArrowDownContact = styled(MdArrowDownward)`
     margin-left: 7px;
     margin-top: -0.5px;
-    font-size: calc(0.5vh + 0.5vw); /* Match the font size of the button text */
+    font-size: calc(0.55vh + 0.55vw); /* Match the font size of the button text */
     vertical-align: middle;
     
-    @media (max-height: 1000px){
-        font-size: calc(0.6vw + 0.6vh);
-        margin-top: -1px;
+    @media (max-height: 1200px){
+        font-size: calc(0.55vw + 0.55vh);
+        margin-top: 0.5px;
     }
 
 
+`;
+
+export const ArrowRight = styled(FaArrowRight)`
+
+    right: 0;
+`;
+
+export const ArrowLeft = styled(FaArrowLeft)`
+    position: absolute;
+    left: 0;
 `;

@@ -13,14 +13,13 @@ const ScrollAnimationAbout = () => {
             setAnimate(false);
         };
         if(inView){
-            console.log('Animating');
             setAnimate(true);
         }
     }, [inView]);
     
 
   return (
-    <div className={`rettStrekAbout ${animate ? 'animate' : ''}`} ref={ref}>
+    <div className={`headingMarker headingMarkerBlack ${animate ? 'animate' : ''}`} ref={ref}>
       {/* Your content here */}
     </div>
   );
