@@ -48,14 +48,15 @@ export const ButtonContact = styled(Link)`
 `;
 
 export const ArrowDownContact = styled(MdArrowDownward)`
-    margin-left: 7px;
+    margin-left: 6px;
     margin-top: -0.5px;
     font-size: calc(0.55vh + 0.55vw); /* Match the font size of the button text */
     vertical-align: middle;
+
     
     @media (max-height: 1200px){
-        font-size: calc(0.55vw + 0.55vh);
-        margin-top: 0.5px;
+        font-size: calc(0.62vw + 0.6vh);
+        margin-top: -0.5px;
     }
 
 

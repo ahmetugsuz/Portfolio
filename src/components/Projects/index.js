@@ -18,6 +18,7 @@ import pandasIcon2 from '../../images/ProgImg/pandasIcon.png';
 import pypiIcon from '../../images/ProgImg/pypiImg.png';
 import dockerIcon from '../../images/ProgImg/docker.png';
 import restIcon from '../../images/ProgImg/restapi.svg';
+import apiRestIcon from '../../images/ProgImg/rest-api-icon.webp';
 import busMoving from '../../videos/bus_driving.webm';
 import busMovingMov from '../../videos/driving_bus.mov';
 import ScrollAnimationAbout from '../ScrollAnimationAbout';
@@ -148,7 +149,7 @@ function Projects() {
                             <p className='headlineProjectInfo'>AlgoBattle</p>
                             <p className='descriptionFirst'>A game designed to teach algorithms in a fun and interactive way. Join us in the thrilling world of algorithms! 
                             Find the elusive green box amongst a sea of others before the algorithm beats you. 
-                            Track your progress, aim for the top spot on our leaderboard, and anticipate the enemies next moves by understanding their algorithmic mind, to stay ahead. Get ready for an exciting journey!
+                            Track your progress, aim for the top spot on the leaderboard, and anticipate the enemies next moves by understanding their algorithmic mind. Get ready for an exciting journey!
                             Click to play the game. </p>
                         </div>
                         <div className='rettStrekProjects'></div>
@@ -171,8 +172,6 @@ function Projects() {
                 {shouldShowButton ? (
 
                     <div className='backProjects'>
-
-
                         <div className="projectBox projectNBA" onClick={handleClickNBAGitHub}  ref={projectBoxRef}>
                                 <div className='imageOfProject'>
                                     <img src={nbaStatistics} className="bildeAvOsloApp" />
@@ -207,7 +206,6 @@ function Projects() {
                                     <ReactPlayer
                                         ref={playerRef}
                                         url={busMovingMov}
-                                        playing={helsinkiIsHovered}
                                         loop
                                         muted
                                         className="busVideo"
@@ -236,7 +234,7 @@ function Projects() {
                                 <div className='projectLanguages'>
                                     <div className='languageBox'><img className='IconContainer' src={pythonIcon}/>Python</div>
                                     <div className='languageBox'><img className='IconContainer biggerIcon' src={dockerIcon} />Docker</div>
-
+                                    <div className='languageBox'><img className='IconContainer biggerIcon' src={apiRestIcon} /> REST-API</div>
                                     <div className='languageBox'><img className='IconContainer middleIcon' src={mySQLIcon} /> MySQL</div>
                                 </div>
                         </div> 

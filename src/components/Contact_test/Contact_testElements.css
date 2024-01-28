@@ -105,6 +105,9 @@
     width: 55%;
     color: white;
     box-sizing: border-box;
+
+    margin-top: calc(-1.5vw - 1vh);
+
 }
 
 
@@ -122,15 +125,16 @@
     position: absolute;
     left: 0;
     top: 0;
-    padding-top: 7px;
+    padding-top: 6px;
 }
 
 .Contact_headline2{
+
     font-size: calc(0.8vw + 0.8vh); /*font-size: 1.5rem;*/
     align-self: flex-end;
     padding-left: 3rem;
     padding-bottom: 0.3rem;
-    padding-top: 30px;
+    padding-top: calc(0.4vw + 0.4vh);
 }
 
 .rettStrek_contact{
@@ -179,11 +183,50 @@
 
 }
 
+.button_contact{
+    margin-top: -15px;
+}
+
+@media screen and (max-width: 1600px) {
+    .overtekst_contact{
+
+        padding-top: 1.3rem;
+    }
+
+    .button_contact{
+        margin-top: -5px;
+    }
+
+    .headline_Contact {
+        padding-top: 90px;
+        padding-bottom: 1rem;
+    }
+
+    .rowbox_container{
+        height: 95vh;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1450px) {
+    .button_contact{
+        margin-top: 10px;
+    }
+
+    .rowbox_container{
+        height: 97vh;
+        width: 100%;
+    }
+
+}
 
 
 
 
-@media (max-width: 1200px) {
+
+
+@media screen and (max-width: 1300px) {
 
     .rowbox_container{
         height: calc(60vh + 50vw);
@@ -193,12 +236,6 @@
         max-width: 100%;
         margin-top: calc(10vw + 10vh);
     }
-
-    /*
-    .innholdOverdel_contact{
-        font-size: large;
-    }
-    */
 
 
     .headline_Contact{
@@ -224,11 +261,19 @@
     .heading_contact{
         /*font-size: 1.8rem;*/
     }
-    /*
-    .Contact_headline2{
-        font-size: 1.3rem;
+
+    .innholdOverdel_contact{
+        min-height: 5%;
     }
-    */
+
+    .Contact_headline1{
+        font-size: 1.1rem;
+    }
+
+    .Contact_headline2{
+        font-size: 1.1rem;
+    }
+
 
     .inputContainer_contact{
         padding-top: 0rem;
@@ -242,6 +287,10 @@
     .textField_contact{
         font-size: medium;
     }
+
+    .button_contact{
+        margin-top: 0px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -254,24 +303,25 @@
         overflow-x: hidden;
         overflow: hidden;
     }
-    /*
-    .innholdOverdel_contact{
-        font-size: medium;
-    }
-    */
+
 
     .headline_Contact{
         padding-top: 10px;
         padding-bottom: 0.5rem;
     }
-    /*
-    .Contact_headline2{
-        display: flex;
-        padding-left: 5px;
-        font-size: 1rem;
-        padding-top: 1px;
+
+    .innholdOverdel_contact{
+        min-height: 6%;
     }
-    */
+
+    .Contact_headline1{
+        font-size: 0.9rem;
+    }
+
+    .Contact_headline2{
+        font-size: 0.9rem;
+    }
+
 
 
     .left_side{
@@ -300,7 +350,7 @@
 
     .meldingContainer_contact{
         width: 80%;
-        margin-top: calc(7vw + 7vh);
+        margin-top: calc(3vw + 3vh);
     }
 
     .overtekst_contact{
@@ -321,8 +371,27 @@
 
 @media screen and (min-width: 1850px){
     .meldingContainer_contact{
-        margin-top: 100px;
         width: 50%;
     }
+    .headline_Contact {
+        padding-top: 140px;
+
+    }
+}
+
+
+@media screen and (min-width: 2100px) {
+    .rowbox_container{}
+
+    .meldingContainer_contact{
+        margin-top: calc(3vw + 2vh);
+    }
+
+
+    .headline_Contact{
+
+        
+    }
+    
 }
 

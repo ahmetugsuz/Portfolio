@@ -16,6 +16,7 @@ import Contact_test from './components/Contact_test';
 import Social_test from './components/Social_test';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
+import { ThemeProvider } from 'styled-components';
 
 // Define your global styles
 const GlobalStyle = createGlobalStyle`
@@ -39,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
   }
   
   h3 {
-    font-size: calc(0.72vw + 0.5vh);
+    font-size: calc(0.70vw + 0.5vh);
     color: #555;
     font-weight: 100;
     line-height: 1.2;
@@ -81,7 +82,7 @@ const GlobalStyle = createGlobalStyle`
   .descriptionFirst{
     line-height: 1.6;
     color: #666;
-    font-size: calc(0.7vw + 0.5vh);
+    font-size: calc(0.6vw + 0.5vh);
     padding-left: 10px;
     padding-bottom: 10px;
     font-weight: 100;
@@ -108,7 +109,13 @@ const GlobalStyle = createGlobalStyle`
     border: solid #444 0.0207in;
   }
 
-  @media screen and (max-width: 2000px) {
+  @media screen and (max-width: 2100px) {
+    .descriptionFirst{
+      font-size: calc(0.65vw + 0.65vh);
+    }
+  }
+
+  @media screen and (max-width: 1900px) {
 
     h1 {
       font-size: calc(1.2vw + 0.8vh);
@@ -120,7 +127,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .descriptionFirst{
-      font-size: calc(0.75vw + 0.55vh);
+      font-size: calc(0.7vw + 0.55vh);
     }
 
     .topLinePurple{
@@ -143,9 +150,15 @@ const GlobalStyle = createGlobalStyle`
 
   }
 
+  @media screen and (max-width: 620px){
+    .descriptionFirst{
+      color: #333;
+    }
+  }
+
   @media screen and (min-width: 2300px){
     p {
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
 
 
@@ -174,12 +187,10 @@ function App() {
         <Route exact path="/" component={Social_test} />
       </StyledWrapper>
       <Route path="/projectOslo" component={ProjectOslo}/>
-
     </Router>
+    </>
 
-
-    
-  </>);
+  );
 }
 
 export default App;

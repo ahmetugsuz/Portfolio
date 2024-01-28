@@ -109,21 +109,21 @@ body{
     height: calc(23vw + 20vh);
     background-color: #fff;
     margin: 150px;
-    box-shadow: -20px 20px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: -20px 20px 5px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
     display: block;
     cursor: pointer;
     overflow: hidden;
     color: #444;
-    transition: transform 0.3s ease;
+
 
 
 }
 
 .projectBox:hover{
-    box-shadow: -30px 30px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-    transform: translateX(3px);
+    box-shadow: -30px 30px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.45s;
+    transform: translateX(4px) translateY(-2px);
     color: red;
 }
 
@@ -308,7 +308,7 @@ body{
 
 
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 2100px) {
 
     .projectsInfo{
 
@@ -352,6 +352,15 @@ body{
         padding: 10px calc(0.40vw + 0.40vh); /*9px 17px*/
     }
 
+}
+
+@media screen and (min-width: 1800px) and (max-width: 2100px) {
+    .languageBox{
+
+        padding: calc(0.255vw + 0.27vh) calc(0.47vw + 0.45vh); /*9px 17px*/
+        margin-right: calc(0.25vw + 0.25vh);
+
+    }
 }
 
 
@@ -421,7 +430,7 @@ body{
 
 
 
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1300px){
 
     .backProjects{
         display: block;
