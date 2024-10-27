@@ -10,6 +10,7 @@ import androidStudioIcon from '../../images/ProgImg/androidStudioImg.png';
 import pythonIcon from '../../images/ProgImg/pythonImg.png';
 import mySQLIcon from '../../images/ProgImg/mysql.png';
 import reactIcon from '../../images/ProgImg/ReactImg.png';
+import redisIcon from '../../images/ProgImg/redis.webp';
 import flaskIcon from '../../images/ProgImg/flaskIcon.png';
 import numpyIcon from '../../images/ProgImg/numpyImg.png';
 import numbaIcon from '../../images/ProgImg/numbaImg.png';
@@ -20,6 +21,7 @@ import dockerIcon from '../../images/ProgImg/docker.png';
 import restIcon from '../../images/ProgImg/restapi.svg';
 import apiRestIcon from '../../images/ProgImg/rest-api-icon.webp';
 import busMoving from '../../videos/bus_driving.webm';
+import busMoving2 from '../../videos/bus_driving.ogv';
 import busMovingMov from '../../videos/driving_bus.mov';
 import ScrollAnimationAbout from '../ScrollAnimationAbout';
 import { ArrowRight, ArrowLeft } from '../ButtonElement';
@@ -44,7 +46,7 @@ function Projects() {
         window.open("https://github.com/ahmetugsuz/Image-filtering", '_blank')
     };
     const handleAlgoBattleClick = () => {
-        window.open("https://algobattle.herokuapp.com", '_blank')
+        window.open("https://www.algobattle.fun", '_blank')
     };
 
     const handleClickHelsinkiBusTrackerGitHub = () => {
@@ -72,7 +74,7 @@ function Projects() {
 
         const handleScroll = () => {
             // Add your logic to determine when to set the state based on scroll position
-            if (window.scrollY > 1000) { // let the video start from 60% after scrolled a bit
+            if (window.scrollY > 500) { // let the video start from 60% after scrolled a bit
               playerRef.current.seekTo(0.5, 'fraction');
             }
           };
@@ -147,17 +149,17 @@ function Projects() {
                         </div>
                         <div className='infoAboutProject' >
                             <p className='headlineProjectInfo'>AlgoBattle</p>
-                            <p className='descriptionFirst'>A game designed to teach algorithms in a fun and interactive way. Join us in the thrilling world of algorithms! 
+                            <p className='descriptionFirst'>A game designed to learn searching algorithms in a fun and interactive way.
                             Find the elusive green box amongst a sea of others before the algorithm beats you. 
-                            Track your progress, aim for the top spot on the leaderboard, and anticipate the enemies next moves by understanding their algorithmic mind. Get ready for an exciting journey!
+                            Track your progress, aim for the top spot on the leaderboard, and anticipate the enemies next moves by understanding their algorithmic mind. Join us in the thrilling world of algorithms! 
                             Click to play the game. </p>
                         </div>
                         <div className='rettStrekProjects'></div>
                         <div className='projectLanguages'>
                             <div className='languageBox'><img className='IconContainer' src={reactIcon}/>React</div>
-                            <div className='languageBox'><img className='IconContainer' src={flaskIcon}/>Flask</div>
+                            <div className='languageBox'><img className='IconContainer' src={redisIcon}/>Redis</div>
                             <div className='languageBox'><img className='IconContainer' src={pythonIcon}/>  Python</div>
-                            <div className='languageBox'><img className='IconContainer middleIcon' src={mySQLIcon} /> MySQL</div>
+                            <div className='languageBox'><img className='IconContainer middleIcon' src={mySQLIcon} />MySQL</div>
                     </div>
                 </div>
 

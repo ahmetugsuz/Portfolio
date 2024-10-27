@@ -17,7 +17,7 @@ function Social_test() {
         <div className='columnBox_social middle_side_social'>
           <div className='middleSideContainer'>
           
-            <p className='middleSideInfo '> @ Copyright 2023. Made by Ahmet Tugsuz </p>
+            <p className='middleSideInfo '> @ Copyright 2024.</p>
             <p className='middleSideInfo createdV2'> // React.js &nbsp; &nbsp; HTML &nbsp; &nbsp; CSS &nbsp; &nbsp; Draw.io </p>
           </div>
         </div>

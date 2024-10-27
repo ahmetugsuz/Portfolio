@@ -14,6 +14,7 @@ import { motion, transform } from 'framer-motion';
 import { Bounce } from 'react-toastify';
 import ScrollAnimation from '../ScrollAnimation';
 import DraggableElement from '../DraggableElements';
+import {PilowRight} from '../ButtonElement';
 
 function Knowledge() {
   const experiencesSectionRef = useRef(null);
@@ -109,7 +110,7 @@ function Knowledge() {
             <motion.p transition={{duration: 0.2, type: "tween"}} animate={isOpenMiddle ? "open" : "closed"}
              variants={variantsMiddleLeft} className='middleInfoTekst middleTekst2'>With the fundemental understanding of logic in back-end development, I am now capable of jumping into several languages without any problem.  </motion.p>
             <motion.p transition={{duration: 0.2, type: "tween"}} animate={isOpenMiddle ? "open" : "closed"}
-             variants={variantsMiddleRight} className='middleInfoTekst'> With 5 years of backend experience, I've contributed to diverse projects.
+             variants={variantsMiddleRight} className='middleInfoTekst middleTekst'> With 5 years of backend experience, I've contributed to diverse projects.
               These include building a UDP Client-Server connection in C, a Python web scraper to gather NBA player data from Wikipedia for statistics, crafting a Java maze-solving algorithm, and more.
                </motion.p>
             <motion.img transition={{duration: 0.2, type: "tween"}}
@@ -136,12 +137,15 @@ function Knowledge() {
       </div>
       <div className='goalsContainer'>
         <div className='headlineContentProficiencies'><h1><ScrollAnimation experiencesSectionRef={experiencesSectionRef} /> Experiences <ScrollAnimation experiencesSectionRef={experiencesSectionRef} /></h1></div>
-        <div className='proficienciesSectionInfo'><h3 style={{ color: '#c2c0c0' }}>Here you will enter my world of experiences, goals, and achievements, where each chapter adds depth to my story. </h3></div>
+        <div className='proficienciesSectionInfo'><h3 style={{ color: '#c2c0c0' }}>Here you will enter my world of experiences and achievements, where each chapter adds depth to my story. </h3></div>
           <div className='experiencesContainer'>
-            <a href='https://www.fotball.no/dommer/' target='_blank'><div className='experienceBox'  ><p className='experienceText'>Norges Fotballforbund (NFF) | Football Referee | 3 Years (2018 - 2021)</p></div></a>
-            <a href='https://www.instagram.com/royalwedding_events/' target='_blank'><div className='experienceBox'><p className='experienceText'>Royal Wedding & Events | Wedding Coordinator and Event Assistant | 5 Years (2015 - 2020)</p></div></a>
-            <a href='https://malerhjem.no' target='_blank'><div className='experienceBox'><p className='experienceText'>Malerhjem | Web designer and Operations Manager | Over 1 Year (2022 - 2023) </p></div></a>
-            <a href='https://www.technipfmc.com' target='_blank'><div className='experienceBox'><p className='experienceText'>TechnipFMC | Project Engineer Software | (2023 - Ongoing) </p></div></a>
+            <div className='experienceSmallContainer'>
+            <a href='https://guidantmeasurement.com' target='_blank' className='custom-underline'><div className='experienceBox'><PilowRight/><div className='custom-underline'><p className='experienceText'>Guidant Measurement Solutions | Project SW Engineer | apr. 2023 - ongoing </p> </div> </div></a>
+            <a href='https://www.technipfmc.com' target='_blank'><div className='experienceBox'><PilowRight/><p className='experienceText'>TechnipFMC | Project Engineer Software | 9 months (aug. 2023 - apr. 2024) </p></div></a>
+            <a href='https://malerhjem.no' target='_blank'><div className='experienceBox'><PilowRight/><p className='experienceText'>Malerhjem | Web designer and Operations Manager | Over 1 Year (2022 - 2023) </p></div></a>
+            <a href='https://www.fotball.no/dommer/' target='_blank'><div className='experienceBox'><PilowRight/><p className='experienceText'>Norges Fotballforbund (NFF) | Football Referee | 3 Years (2018 - 2021)</p></div></a>
+            <a href='https://www.instagram.com/royalwedding_events/' target='_blank'><div className='experienceBox'><PilowRight/> <p className='experienceText'>Royal Wedding & Events | Wedding Coordinator and Event Assistant | 5 Years (2015 - 2020)</p></div></a>
+            </div>
           </div>
         </div>
         

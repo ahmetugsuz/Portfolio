@@ -185,8 +185,10 @@ function App() {
         <Route exact path="/" component={Knowledge} />
         <Route exact path="/" component={Contact_test}/>
         <Route exact path="/" component={Social_test} />
+
+        {/* ProjectOslo Route */}
       </StyledWrapper>
-      <Route path="/projectOslo" component={ProjectOslo}/>
+        <Route path="/projectOslo" component={ProjectOslo}/>
     </Router>
     </>
 

@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import {Link} from 'react-scroll';
-import {MdArrowDownward, MdArrowDropUp} from 'react-icons/md';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import {MdArrowDownward, MdArrowDropUp, MdArrowRight} from 'react-icons/md';
+import { FaArrowLeft, FaArrowRight, FaAngleRight } from 'react-icons/fa';
+
 
 export const Button = styled(Link)`
     border-radius: 50px;
@@ -62,6 +63,9 @@ export const ArrowDownContact = styled(MdArrowDownward)`
 
 `;
 
+export const ArrowRightMd = styled(MdArrowRight)`
+`;
+
 export const ArrowRight = styled(FaArrowRight)`
 
     right: 0;
@@ -70,4 +74,9 @@ export const ArrowRight = styled(FaArrowRight)`
 export const ArrowLeft = styled(FaArrowLeft)`
     position: absolute;
     left: 0;
+`;
+
+export const PilowRight = styled(FaAngleRight)`
+    margin-top: 1px;
+    margin-right: 4px;
 `;

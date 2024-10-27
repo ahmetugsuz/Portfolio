@@ -115,9 +115,6 @@ body{
     cursor: pointer;
     overflow: hidden;
     color: #444;
-
-
-
 }
 
 .projectBox:hover{
@@ -342,8 +339,6 @@ body{
         width: calc(0.5vw + 0.4vh);
     }
 
-
-
     .projectLanguages{
         margin-bottom: calc(0.15vh + 0.20vw);
     }
@@ -359,8 +354,12 @@ body{
 
         padding: calc(0.255vw + 0.27vh) calc(0.47vw + 0.45vh); /*9px 17px*/
         margin-right: calc(0.25vw + 0.25vh);
-
     }
+
+    .busVideo{
+        margin-left: 65px;
+    }
+
 }
 
 
@@ -370,7 +369,6 @@ body{
         height: calc(23vw + 21vh);
         width: calc(15vw + 16vh);
         margin-top: 150px;
-
     }
     
 }
@@ -430,7 +428,7 @@ body{
 
 
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1200px){
 
     .backProjects{
         display: block;
