@@ -34,9 +34,10 @@ function Projects() {
     const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
     const history = useHistory();
     const experiencesSectionRef = useRef(null);
+    
     const handleClick = () =>{
-        history.push("/projectOslo")
-        window.scrollTo(0, 0);
+        window.open("/projectoslo", "_blank");
+        //window.scrollTo(0, 100); // work only if previous setting is "history.push(...)"
     };
 
     const handleClickNBAGitHub = () => {

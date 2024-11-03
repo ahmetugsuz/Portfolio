@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {Link} from 'react-scroll';
 import {MdArrowDownward, MdArrowDropUp, MdArrowRight} from 'react-icons/md';
-import { FaArrowLeft, FaArrowRight, FaAngleRight } from 'react-icons/fa';
+import { FaArrowLeft, FaArrowRight, FaAngleRight, FaHome } from 'react-icons/fa';
 
 
 export const Button = styled(Link)`
@@ -79,4 +79,8 @@ export const ArrowLeft = styled(FaArrowLeft)`
 export const PilowRight = styled(FaAngleRight)`
     margin-top: 1px;
     margin-right: 4px;
+`;
+
+export const HomeIcon = styled(FaHome)`
+    margin-bottom: -2px;
 `;

@@ -4,7 +4,7 @@ import { animate, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
-
+import { useHistory } from 'react-router-dom';
 import logo from '../../images/osloTouristAppLogo.png';
 import intro from '../../images/OsloTouristApp/Introduction.png';
 import intro2 from '../../images/OsloTouristApp/Introduction2.png';
@@ -19,6 +19,10 @@ import osloResultSearch from '../../images/OsloTouristApp/OsloResultSearch.png';
 import settingImg from '../../images/OsloTouristApp/Settings.png';
 import darkModeImg from '../../images/OsloTouristApp/DarkMode.png';
 import colorBlindImg from '../../images/OsloTouristApp/ColorBlind.png';
+import { MdHomeMax, MdHomeMini, MdHomeWork, MdOutlineVideoCameraBack } from 'react-icons/md';
+import { FaBackward, FaHome } from 'react-icons/fa';
+import {HomeIcon} from '../ButtonElement';
+
 
 const useAnimationOnInView = () => {
     const animationDown = useAnimation();
@@ -101,11 +105,23 @@ function ProjectsTest() {
     const { ref: searchRef, animationDown: animationN, animationRight: animationH, animationUp: animationO } = useAnimationOnInView();
     const { ref: settingRef, animationDown: animationD, animationRight: animationR, animationUp: animationU } = useAnimationOnInView();
 
+    const history = useHistory();
 
+    const HandleBackHome = () => {
+        window.open("/"); // Navigates to /projects in the same tab without reloading
+    };
+
+    useEffect(() => {
+        // Scroll down 200 pixels
+        window.scrollTo({
+            top: 150, // Scroll to 200 pixels down
+            behavior: "smooth"
+        });
+    }, []);
 
 
     return (
-        <div className='Projects_test_Container' id='projectOslo'>
+        <div className='Projects_test_Container' id='projectoslo'>
             <div className='rowHolder'>
                 <div className='topline_logo_container'>
                     <h2 className=''>Oslo tourist App</h2>
@@ -205,6 +221,9 @@ function ProjectsTest() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='BottomSectionProjects'>
+                <a className='backToProjectsBtn' onClick={HandleBackHome}>Back Home <HomeIcon /></a>
             </div>
 
 

@@ -184,6 +184,31 @@
 
 }
 
+.BottomSectionProjects{
+    width: 100%;
+    text-align: left;
+
+
+
+}
+
+.backToProjectsBtn{
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(75, 197, 238);
+    margin-left: 100px;
+    padding: 50px;
+    transition: 0.2s;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.backToProjectsBtn:hover{
+    color: lightblue;
+}
+
+
+
 @media screen and (min-width: 1800px) {
 
     .columnBox{

@@ -175,24 +175,25 @@ const StyledWrapper = styled.div`
 function App() {
   return (
     <>
-    <Router>
-      <GlobalStyle />
-      <Home />
-      <StyledWrapper>
-        <Route exact path="/" component={Hero}/>
-        <Route exact path="/" {...homeObjAbout} component={AboutMe}/> 
-        <Route exact path="/" component={Projects}/>   
-        <Route exact path="/" component={Knowledge} />
-        <Route exact path="/" component={Contact_test}/>
-        <Route exact path="/" component={Social_test} />
+      <Router>
+        <GlobalStyle />
+        <StyledWrapper>
+          {/* Home Route */}
+          <Route exact path="/" component={Home} />
 
-        {/* ProjectOslo Route */}
-      </StyledWrapper>
-        <Route path="/projectOslo" component={ProjectOslo}/>
-    </Router>
+          {/* Other Routes */}
+          <Route path="/projectoslo" component={ProjectOslo} />
+          <Route path="/" exact component={Hero} />
+          <Route path="/" exact render={() => <AboutMe {...homeObjAbout} />} />
+          <Route path="/" exact component={Projects} />
+          <Route path="/" exact component={Knowledge} />
+          <Route path="/" exact component={Contact_test} />
+          <Route path="/" exact component={Social_test} />
+        </StyledWrapper>
+      </Router>
     </>
-
   );
 }
+
 
 export default App;
